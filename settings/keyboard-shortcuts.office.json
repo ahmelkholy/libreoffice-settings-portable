@@ -1,0 +1,65 @@
+{
+  "scope": "LibreOffice Writer",
+  "notes": [
+    "These shortcuts are layered into LibreOffice's accelerator settings.",
+    "They are intended to make Writer closer to Microsoft Word while preserving LibreOffice defaults where practical."
+  ],
+  "shortcuts": [
+    {
+      "keys": "Ctrl+H",
+      "command": ".uno:SearchDialog",
+      "meaning": "Find and Replace"
+    },
+    {
+      "keys": "Ctrl+G",
+      "command": ".uno:GotoPage",
+      "meaning": "Go To page"
+    },
+    {
+      "keys": "Ctrl+Alt+M",
+      "command": ".uno:InsertAnnotation",
+      "meaning": "Insert comment"
+    },
+    {
+      "keys": "Ctrl+Shift+>",
+      "command": ".uno:Grow",
+      "meaning": "Increase font size"
+    },
+    {
+      "keys": "Ctrl+Shift+<",
+      "command": ".uno:Shrink",
+      "meaning": "Decrease font size"
+    },
+    {
+      "keys": "Ctrl+Space",
+      "command": ".uno:ResetAttributes",
+      "meaning": "Clear direct character formatting"
+    },
+    {
+      "keys": "Ctrl+Shift+L",
+      "command": ".uno:DefaultBullet",
+      "meaning": "Toggle bullet list"
+    },
+    {
+      "keys": "Ctrl+Shift+N",
+      "command": ".uno:StyleApply?Style:string=Standard&FamilyName:string=ParagraphStyles",
+      "meaning": "Apply Normal/Standard paragraph style"
+    },
+    {
+      "keys": "Ctrl+Alt+1",
+      "command": ".uno:StyleApply?Style:string=Heading 1&FamilyName:string=ParagraphStyles",
+      "meaning": "Apply Heading 1"
+    },
+    {
+      "keys": "Ctrl+Alt+2",
+      "command": ".uno:StyleApply?Style:string=Heading 2&FamilyName:string=ParagraphStyles",
+      "meaning": "Apply Heading 2"
+    },
+    {
+      "keys": "Ctrl+Alt+3",
+      "command": ".uno:StyleApply?Style:string=Heading 3&FamilyName:string=ParagraphStyles",
+      "meaning": "Apply Heading 3"
+    }
+  ]
+}
+

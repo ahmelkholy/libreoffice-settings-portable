@@ -1,0 +1,17 @@
+# Local verification and restore backups
+*.restore-backup-*
+backup-file-associations-*.json
+windows/soffice.ini-backups/
+
+# Do not publish raw/private profile dumps here
+*.zip
+*.7z
+*.tar
+*.tar.gz
+raw-profile/
+private/
+
+# OS/editor noise
+.DS_Store
+Thumbs.db
+desktop.ini

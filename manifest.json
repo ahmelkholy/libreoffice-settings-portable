@@ -1,0 +1,67 @@
+{
+  "schema": "libreoffice-settings-portable-manifest-v1",
+  "generatedAt": "2026-05-21T14:17:27.5478862+03:00",
+  "sourceProfile": "redacted local LibreOffice user profile",
+  "portableFolder": "repository root",
+  "noShortcuts": true,
+  "windowsGlobalNoSplash": "Logo=0",
+  "privateArchive": {
+    "createdOnThisMachine": true,
+    "trackedInGit": false,
+    "pathRedacted": true,
+    "note": "A private full-profile archive was created outside this repository. Do not publish raw profile archives without review."
+  },
+  "note": "No desktop or Start Menu shortcuts are required or created. LibreOffice UI and shortcut preferences are stored in the user profile settings file. Windows no-splash is handled by install-level Logo=0 and optional per-user file-association overrides.",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 269,
+      "sha256": "8a5c84a673cb99944549828ebd1ebd3164e8a749c0c64f4755f7d5496de1e842"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3275,
+      "sha256": "7fa2e2a1229791cb05338ec64214c065f0115802dbbb39378039e569ad49c631"
+    },
+    {
+      "path": "scripts/apply-windows-global-nologo.ps1",
+      "bytes": 1709,
+      "sha256": "a0b9cde5360c590038b27a9672ec4338f6a8c08f516952e1f29dc83e18de4a95"
+    },
+    {
+      "path": "scripts/apply-windows-nologo-associations.ps1",
+      "bytes": 2028,
+      "sha256": "b4cacfefb4c28ba7c593fa0ba3d9e96479c2a8997ad92a57b53c4d0b01c4d70a"
+    },
+    {
+      "path": "scripts/restore.ps1",
+      "bytes": 3984,
+      "sha256": "f0f80d0fb16fcb234bfef04ada1f81c87b5aae7e18b510c6e3ab77451eebe5cf"
+    },
+    {
+      "path": "scripts/restore.sh",
+      "bytes": 2382,
+      "sha256": "3c655b4c97c1124825a060e3b16b4d6f66f2956b026abd085a7d1195bed76761"
+    },
+    {
+      "path": "settings/backup-summary.json",
+      "bytes": 1767,
+      "sha256": "cb469afd94e3a8c418924bed9c7a14c6097f54ef36d680a38340433970a0bf60"
+    },
+    {
+      "path": "settings/keyboard-shortcuts.office.json",
+      "bytes": 1778,
+      "sha256": "4267a06d524a10eb6e4f7fd31b82a6884a0074de128fba4f971341dc81434fe5"
+    },
+    {
+      "path": "settings/registrymodifications.portable.xcu",
+      "bytes": 459972,
+      "sha256": "530179cfa546a3a90b53ef2f6f66188388b6b6b7cecd3da7d248fa347ef512ca"
+    },
+    {
+      "path": "windows/file-associations.nologo.json",
+      "bytes": 2245,
+      "sha256": "02d75b1971e72c41327a7a16c1579586dddd507caee4532e49ce07cae5f7c4b8"
+    }
+  ]
+}

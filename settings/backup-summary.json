@@ -1,0 +1,34 @@
+{
+  "generatedAt": "2026-05-21T14:08:47.3579561+03:00",
+  "sourceProfile": "Redacted local LibreOffice user profile registrymodifications.xcu",
+  "shareableXcu": "settings/registrymodifications.portable.xcu",
+  "includedItemCount": 379,
+  "excludedItemCount": 693,
+  "privacyPolicy": "Sanitized: excludes histories, recovery entries, user profile data, thumbnails, local user paths, and recent-document lists.",
+  "includedPathPrefixes": [
+    "/org.openoffice.Office.Accelerators",
+    "/org.openoffice.Office.Common/Appearance",
+    "/org.openoffice.Office.Common/I18N",
+    "/org.openoffice.Office.Common/Misc",
+    "/org.openoffice.Office.Common/Save/Document",
+    "/org.openoffice.Office.Common/View/Menu",
+    "/org.openoffice.Office.UI.ToolbarMode",
+    "/org.openoffice.Office.UI.CalcWindowState/UIElements/States",
+    "/org.openoffice.Office.UI.DrawWindowState/UIElements/States",
+    "/org.openoffice.Office.UI.ImpressWindowState/UIElements/States",
+    "/org.openoffice.Office.UI.StartModuleWindowState/UIElements/States",
+    "/org.openoffice.Office.UI.WriterWindowState/UIElements/States",
+    "/org.openoffice.Office.UI.Sidebar",
+    "/org.openoffice.Office.Writer/Content",
+    "/org.openoffice.Office.Writer/Cursor",
+    "/org.openoffice.Office.Writer/FmtAidsAutocomplete",
+    "/org.openoffice.Office.Writer/Layout",
+    "/org.openoffice.Setup/L10N",
+    "/org.openoffice.Setup/Office/Factories"
+  ],
+  "windowsNoLogo": "scripts/apply-windows-global-nologo.ps1 for install-level Logo=0; windows/file-associations.nologo.json and scripts/apply-windows-nologo-associations.ps1 for per-user file associations; no shortcuts are created.",
+  "portableRestore": [
+    "scripts/restore.ps1",
+    "scripts/restore.sh"
+  ]
+}

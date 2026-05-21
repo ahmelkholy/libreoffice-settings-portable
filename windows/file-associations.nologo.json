@@ -1,0 +1,67 @@
+[
+  {
+    "class": "LibreOffice.CalcDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.CalcTemplate.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.DatabaseDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\sbase.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.DrawDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.DrawTemplate.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.ImpressDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.ImpressTemplate.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.MathDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.WriterDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.WriterGlobalDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.WriterTemplate.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.WriterWebDocument.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  },
+  {
+    "class": "LibreOffice.WriterWebTemplate.1",
+    "command": "\"C:\\Program Files\\LibreOffice\\program\\soffice.exe\" --nologo -o \"%1\"",
+    "nologo": true
+  }
+]
