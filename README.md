@@ -41,6 +41,7 @@ between operating systems.
   - Windows install-level `Logo=0` setting for app launches, without creating shortcuts
 - `scripts/start-portable.ps1`
   - Starts the currently installed LibreOffice with a stable `portable-profile`
+  - Refreshes the canonical settings and locked policy on every cold launch
   - Converts Windows document paths to `file:///...` URIs before opening
 - `scripts/start-portable.vbs`
   - Windows GUI launcher for file associations, so opening documents does not show a console window
@@ -141,9 +142,16 @@ Open a document through the same profile:
 powershell -ExecutionPolicy Bypass -File .\scripts\start-portable.ps1 "D:\PROJECT-PHD-Thesis\Presentation\transcript.docx"
 ```
 
-The launcher finds the current LibreOffice installation each time, initializes
-`portable-profile\user\registrymodifications.xcu` from the portable settings if
-needed, and keeps that runtime profile outside git.
+The launcher finds the current LibreOffice installation each time and keeps its
+runtime profile in the git-ignored `portable-profile` folder. On every cold
+launch it force-installs the policy and replaces the runtime settings with the
+canonical Git copy. If that profile is already open, it leaves the live files
+alone and forwards the document to the running instance. Do not use
+`--nolockcheck`; the launcher intentionally respects LibreOffice's profile lock.
+
+This optional launcher uses a separate LibreOffice profile. If you need Zotero
+commands as well as a hidden Zotero toolbar, install Zotero's LibreOffice
+integration once for this portable profile.
 
 To make double-click/open commands use the portable profile for LibreOffice file
 classes:
