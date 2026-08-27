@@ -221,7 +221,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -277,7 +277,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -333,7 +333,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -389,7 +389,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -445,7 +445,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -501,7 +501,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -557,7 +557,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -613,7 +613,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -669,7 +669,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -725,7 +725,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -781,7 +781,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -837,7 +837,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -893,7 +893,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -949,7 +949,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1005,7 +1005,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1061,7 +1061,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1117,7 +1117,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1173,7 +1173,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1229,7 +1229,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1285,7 +1285,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1341,7 +1341,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1397,7 +1397,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1453,7 +1453,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1509,7 +1509,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1565,7 +1565,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1621,7 +1621,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1677,7 +1677,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1733,7 +1733,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1789,7 +1789,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1845,7 +1845,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1901,7 +1901,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -1957,7 +1957,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2013,7 +2013,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2069,7 +2069,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2125,7 +2125,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2181,7 +2181,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2237,7 +2237,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2293,7 +2293,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2349,7 +2349,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2405,7 +2405,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2461,7 +2461,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2517,7 +2517,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2573,7 +2573,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2629,7 +2629,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2685,7 +2685,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2741,7 +2741,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2797,7 +2797,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2853,7 +2853,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2909,7 +2909,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -2965,7 +2965,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3021,7 +3021,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3077,7 +3077,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3133,7 +3133,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3189,7 +3189,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3245,7 +3245,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3301,7 +3301,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3357,7 +3357,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3413,7 +3413,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3469,7 +3469,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3525,7 +3525,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3581,7 +3581,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3637,7 +3637,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3693,7 +3693,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3749,7 +3749,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3805,7 +3805,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3861,7 +3861,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3917,7 +3917,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -3973,7 +3973,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4029,7 +4029,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4085,7 +4085,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4141,7 +4141,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4197,7 +4197,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4253,7 +4253,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4309,7 +4309,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4365,7 +4365,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4421,7 +4421,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4477,7 +4477,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4533,7 +4533,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4589,7 +4589,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4645,7 +4645,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4701,7 +4701,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4757,7 +4757,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4813,7 +4813,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4869,7 +4869,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4925,7 +4925,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -4981,7 +4981,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5037,7 +5037,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5093,7 +5093,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5149,7 +5149,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5205,7 +5205,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5261,7 +5261,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5317,7 +5317,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5373,7 +5373,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5429,7 +5429,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5485,7 +5485,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5541,7 +5541,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5597,7 +5597,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5653,7 +5653,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5709,7 +5709,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5765,7 +5765,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5821,7 +5821,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5877,7 +5877,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5933,7 +5933,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -5989,7 +5989,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6045,7 +6045,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6101,7 +6101,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6157,7 +6157,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6213,7 +6213,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6269,7 +6269,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6325,7 +6325,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6381,7 +6381,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6437,7 +6437,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6493,7 +6493,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6549,7 +6549,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6605,7 +6605,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6661,7 +6661,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6717,7 +6717,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6773,7 +6773,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6829,7 +6829,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6885,7 +6885,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6941,7 +6941,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -6997,7 +6997,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7053,7 +7053,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7109,7 +7109,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7165,7 +7165,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7221,7 +7221,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7277,7 +7277,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7333,7 +7333,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7389,7 +7389,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7445,7 +7445,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7501,7 +7501,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7557,7 +7557,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7613,7 +7613,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7669,7 +7669,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7725,7 +7725,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7781,7 +7781,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -7837,7 +7837,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8311,7 +8311,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8367,7 +8367,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8423,7 +8423,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8479,7 +8479,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8535,7 +8535,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8591,7 +8591,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8647,7 +8647,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8703,7 +8703,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8759,7 +8759,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8815,7 +8815,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8871,7 +8871,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8927,7 +8927,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -8983,7 +8983,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9039,7 +9039,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9095,7 +9095,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9151,7 +9151,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9207,7 +9207,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9263,7 +9263,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9319,7 +9319,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9375,7 +9375,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9431,7 +9431,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9487,7 +9487,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9543,7 +9543,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9599,7 +9599,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9655,7 +9655,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -9711,35 +9711,10 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode">
-    <prop oor:name="ActiveCalc" oor:op="fuse">
-      <value>Default</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode">
-    <prop oor:name="ActiveDraw" oor:op="fuse">
-      <value>Default</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode">
-    <prop oor:name="ActiveImpress" oor:op="fuse">
-      <value>Default</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode">
-    <prop oor:name="ActiveWriter" oor:op="fuse">
-      <value>Default</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Calc']">
-    <prop oor:name="Active" oor:op="fuse">
-      <value>Default</value>
-    </prop>
-  </item>
   <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Calc']/Modes/org.openoffice.Office.UI.ToolbarMode:ModeEntry['Default']">
     <prop oor:name="HasMenubar" oor:op="fuse">
       <value>true</value>
@@ -9758,11 +9733,6 @@
   <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Calc']/Modes/org.openoffice.Office.UI.ToolbarMode:ModeEntry['Default']">
     <prop oor:name="UserToolbars" oor:op="fuse">
       <value />
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Draw']">
-    <prop oor:name="Active" oor:op="fuse">
-      <value>Default</value>
     </prop>
   </item>
   <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Draw']/Modes/org.openoffice.Office.UI.ToolbarMode:ModeEntry['Default']">
@@ -9785,11 +9755,6 @@
       <value />
     </prop>
   </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Impress']">
-    <prop oor:name="Active" oor:op="fuse">
-      <value>Default</value>
-    </prop>
-  </item>
   <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Impress']/Modes/org.openoffice.Office.UI.ToolbarMode:ModeEntry['Default']">
     <prop oor:name="HasMenubar" oor:op="fuse">
       <value>true</value>
@@ -9808,11 +9773,6 @@
   <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Impress']/Modes/org.openoffice.Office.UI.ToolbarMode:ModeEntry['Default']">
     <prop oor:name="UserToolbars" oor:op="fuse">
       <value />
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Writer']">
-    <prop oor:name="Active" oor:op="fuse">
-      <value>Default</value>
     </prop>
   </item>
   <item oor:path="/org.openoffice.Office.UI.ToolbarMode/Applications/org.openoffice.Office.UI.ToolbarMode:Application['Writer']/Modes/org.openoffice.Office.UI.ToolbarMode:ModeEntry['Default']">
@@ -9862,7 +9822,7 @@
   </item>
   <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/addon_LibreLogo.OfficeToolBar']">
     <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-      <value>false</value>
+      <value>true</value>
     </prop>
   </item>
   <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/addon_LibreLogo.OfficeToolBar']">
@@ -9899,6 +9859,16 @@
     <value xml:lang="en-US">Logo</value>
   </item>
   <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/addon_LibreLogo.OfficeToolBar']">
+    <prop oor:name="Visible" oor:op="fuse">
+      <value>false</value>
+    </prop>
+  </item>
+  <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/addon_Zotero.OfficeToolBar']">
+    <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
+      <value>true</value>
+    </prop>
+  </item>
+  <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States/org.openoffice.Office.UI.WindowState:WindowStateType['private:resource/toolbar/addon_Zotero.OfficeToolBar']">
     <prop oor:name="Visible" oor:op="fuse">
       <value>false</value>
     </prop>
@@ -9955,7 +9925,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10011,7 +9981,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10067,7 +10037,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10123,7 +10093,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10179,7 +10149,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10235,7 +10205,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10291,7 +10261,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10347,7 +10317,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10403,7 +10373,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10459,7 +10429,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10515,7 +10485,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10571,7 +10541,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10627,7 +10597,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10683,7 +10653,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10739,7 +10709,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10795,7 +10765,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10851,7 +10821,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10907,7 +10877,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -10963,7 +10933,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11019,7 +10989,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11075,7 +11045,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11131,7 +11101,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11187,7 +11157,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11243,7 +11213,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11299,7 +11269,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11355,7 +11325,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11411,7 +11381,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11467,7 +11437,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11523,7 +11493,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11579,7 +11549,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11635,7 +11605,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11691,7 +11661,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11747,7 +11717,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11803,7 +11773,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11859,7 +11829,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11915,7 +11885,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -11971,7 +11941,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12027,7 +11997,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12083,7 +12053,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12139,7 +12109,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12195,7 +12165,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12251,7 +12221,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12307,7 +12277,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12363,7 +12333,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12419,7 +12389,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12475,7 +12445,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12531,7 +12501,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12587,7 +12557,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12643,7 +12613,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12699,7 +12669,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12755,7 +12725,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12811,7 +12781,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12867,7 +12837,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12923,7 +12893,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -12979,7 +12949,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -13035,7 +13005,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -13091,7 +13061,7 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
   </item>
@@ -13147,9 +13117,14 @@
         <value>false</value>
       </prop>
       <prop oor:name="HideFromToolbarMenu" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
     </node>
+  </item>
+  <item oor:path="/org.openoffice.Office.Views/Windows/org.openoffice.Office.Views:WindowType['swriter/10336']/UserData">
+    <prop oor:name="Data" oor:op="fuse" oor:type="xs:string">
+      <value>V2,H,0</value>
+    </prop>
   </item>
   <item oor:path="/org.openoffice.Office.Writer/Content/Display">
     <prop oor:name="DefaultAnchor" oor:op="fuse">
@@ -13313,7 +13288,7 @@
   </item>
   <item oor:path="/org.openoffice.Office.Writer/Content/Zoom">
     <prop oor:name="DefaultZoom" oor:op="fuse">
-      <value>true</value>
+      <value>false</value>
     </prop>
   </item>
   <item oor:path="/org.openoffice.Office.Writer/Content/Zoom">
@@ -13323,7 +13298,7 @@
   </item>
   <item oor:path="/org.openoffice.Office.Writer/Content/Zoom">
     <prop oor:name="ZoomValue" oor:op="fuse">
-      <value>100</value>
+      <value>50</value>
     </prop>
   </item>
   <item oor:path="/org.openoffice.Office.Writer/Cursor/DirectCursor">
@@ -13441,27 +13416,12 @@
   </item>
   <item oor:path="/org.openoffice.Office.Writer/Layout/Zoom">
     <prop oor:name="Value" oor:op="fuse">
-      <value>100</value>
+      <value>50</value>
     </prop>
   </item>
   <item oor:path="/org.openoffice.Setup/L10N">
     <prop oor:name="ooLocale" oor:op="fuse">
       <value>en-US</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.frame.StartModule']">
-    <prop oor:name="ooSetupFactoryWindowAttributes" oor:op="fuse">
-      <value>0,23,1920,1057;4;,,,;</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.presentation.PresentationDocument']">
-    <prop oor:name="ooSetupFactoryWindowAttributes" oor:op="fuse">
-      <value>0,23,1920,1057;4;,,,;</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.sheet.SpreadsheetDocument']">
-    <prop oor:name="ooSetupFactoryWindowAttributes" oor:op="fuse">
-      <value>-1,22,1920,1057;1;,,,;</value>
     </prop>
   </item>
   <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']">
@@ -13472,11 +13432,6 @@
   <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']">
     <prop oor:name="ooSetupFactoryStyleFilter" oor:op="fuse">
       <value>4096</value>
-    </prop>
-  </item>
-  <item oor:path="/org.openoffice.Setup/Office/Factories/org.openoffice.Setup:Factory['com.sun.star.text.TextDocument']">
-    <prop oor:name="ooSetupFactoryWindowAttributes" oor:op="fuse">
-      <value>0,23,1920,1057;4;,,,;</value>
     </prop>
   </item>
 </oor:items>

@@ -1,10 +1,10 @@
 {
-  "generatedAt": "2026-05-21T14:08:47.3579561+03:00",
+  "generatedAt": "2026-08-27T19:46:00+03:00",
   "sourceProfile": "Redacted local LibreOffice user profile registrymodifications.xcu",
   "shareableXcu": "settings/registrymodifications.portable.xcu",
-  "includedItemCount": 379,
+  "includedItemCount": 370,
   "excludedItemCount": 693,
-  "privacyPolicy": "Sanitized: excludes histories, recovery entries, user profile data, thumbnails, local user paths, and recent-document lists.",
+  "privacyPolicy": "Sanitized: excludes histories, recovery entries, user profile data, thumbnails, local user paths, recent-document lists, and display-specific window geometry.",
   "includedPathPrefixes": [
     "/org.openoffice.Office.Accelerators",
     "/org.openoffice.Office.Common/Appearance",
@@ -19,6 +19,7 @@
     "/org.openoffice.Office.UI.StartModuleWindowState/UIElements/States",
     "/org.openoffice.Office.UI.WriterWindowState/UIElements/States",
     "/org.openoffice.Office.UI.Sidebar",
+    "/org.openoffice.Office.Views/Windows",
     "/org.openoffice.Office.Writer/Content",
     "/org.openoffice.Office.Writer/Cursor",
     "/org.openoffice.Office.Writer/FmtAidsAutocomplete",

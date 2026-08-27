@@ -1,6 +1,6 @@
 {
   "schema": "libreoffice-settings-portable-manifest-v1",
-  "generatedAt": "2026-05-21T14:17:27.5478862+03:00",
+  "generatedAt": "2026-08-27T19:52:28+03:00",
   "sourceProfile": "redacted local LibreOffice user profile",
   "portableFolder": "repository root",
   "noShortcuts": true,
@@ -11,8 +11,13 @@
     "pathRedacted": true,
     "note": "A private full-profile archive was created outside this repository. Do not publish raw profile archives without review."
   },
-  "note": "No desktop or Start Menu shortcuts are required or created. LibreOffice UI and shortcut preferences are stored in the user profile settings file. Windows no-splash is handled by install-level Logo=0 and optional per-user file-association overrides.",
+  "note": "No desktop or Start Menu shortcuts are required or created. The canonical LibreOffice registry and clean-interface policy are restored together. Windows no-splash is handled by install-level Logo=0 and optional per-user file-association overrides.",
   "files": [
+    {
+      "path": ".gitattributes",
+      "bytes": 196,
+      "sha256": "70512bc5c3bdbc70ad3754a69abe93765d94b689b8757ae3d26c2337099a96fe"
+    },
     {
       "path": ".gitignore",
       "bytes": 269,
@@ -20,8 +25,143 @@
     },
     {
       "path": "README.md",
-      "bytes": 3275,
-      "sha256": "7fa2e2a1229791cb05338ec64214c065f0115802dbbb39378039e569ad49c631"
+      "bytes": 5444,
+      "sha256": "ef47aac98aace603940e1a64c57986a15c7924e1be21badec5ec3bb1b46b42f9"
+    },
+    {
+      "path": "dist/portable-clean-libreoffice.oxt",
+      "bytes": 15194,
+      "sha256": "29e4e986d56bbfb19a2fc0ae32127f57507b2a902d8f76a4fbff502b7fe1fcc1"
+    },
+    {
+      "path": "extension/clean-ui/BaseWindowState.xcu",
+      "bytes": 2767,
+      "sha256": "e66f9938214305e6fc8b91a4b3a0626a7f83e3e73fcda8b3bb393fbd451d3325"
+    },
+    {
+      "path": "extension/clean-ui/BasicIDEWindowState.xcu",
+      "bytes": 3972,
+      "sha256": "ada35c7b2cfe233cd7f623f914863b5b53147b7fd848a3816062aaa1fd13aaa8"
+    },
+    {
+      "path": "extension/clean-ui/CalcWindowState.xcu",
+      "bytes": 16048,
+      "sha256": "a6944cb35240268656db33cdf09bd209a4febac8f2bd59845667f843a9349e51"
+    },
+    {
+      "path": "extension/clean-ui/ChartWindowState.xcu",
+      "bytes": 4362,
+      "sha256": "af7cf69d2092db6652eb14de37e6a936c52156cf717a89dc553efbdc5482220d"
+    },
+    {
+      "path": "extension/clean-ui/DbBrowserWindowState.xcu",
+      "bytes": 1156,
+      "sha256": "671e441d07d4608c8fade63b7c333a924f2b240ccf24dba81a63417fcdd8a78d"
+    },
+    {
+      "path": "extension/clean-ui/DbQueryWindowState.xcu",
+      "bytes": 1961,
+      "sha256": "024514a26ea203628f2469b4453704281bdfe0d0b18c4131ff75e6945b8ef85b"
+    },
+    {
+      "path": "extension/clean-ui/DbRelationWindowState.xcu",
+      "bytes": 1157,
+      "sha256": "b95b51c0f62c5e063251f9d7f036430163552b6090b4ead3ed5950aad3b983a8"
+    },
+    {
+      "path": "extension/clean-ui/DbReportWindowState.xcu",
+      "bytes": 3972,
+      "sha256": "f3df595aa16f2195889b10f423c2091d2da6ca4056b4649a7359d301fe906fc8"
+    },
+    {
+      "path": "extension/clean-ui/DbTableDataWindowState.xcu",
+      "bytes": 1158,
+      "sha256": "a5508d1f6afe3db7930f84e9a9b01daa2dcce24f6ccd17ae7e8f0368e6b86077"
+    },
+    {
+      "path": "extension/clean-ui/DbTableWindowState.xcu",
+      "bytes": 1154,
+      "sha256": "b2c1ba9ed7a3d6510ddb83f1e15d268ee878b1fa5d365b3433ea5dcfea410573"
+    },
+    {
+      "path": "extension/clean-ui/DrawWindowState.xcu",
+      "bytes": 19675,
+      "sha256": "df0fd008e4a7ab332d233c4e68560f3981af1f8a05bb041f0d8c9953e4c3a8fd"
+    },
+    {
+      "path": "extension/clean-ui/ImpressWindowState.xcu",
+      "bytes": 21707,
+      "sha256": "de4ea4dae8a1df652df5bf34cda46b1ef4f06270919cfa78463245feacb46880"
+    },
+    {
+      "path": "extension/clean-ui/META-INF/manifest.xml",
+      "bytes": 3657,
+      "sha256": "82b0a7da24c38b584a35508177181f03283e6415d2d9400e52e5cacf2f9ba525"
+    },
+    {
+      "path": "extension/clean-ui/MathWindowState.xcu",
+      "bytes": 1955,
+      "sha256": "fe29f882e4bc0f39bcdcc0d8ba5e8647ccfcd1aafc4701f090954c35eada1415"
+    },
+    {
+      "path": "extension/clean-ui/StartModuleWindowState.xcu",
+      "bytes": 1162,
+      "sha256": "eb4bd0c97da30a4de71ad610cc9dfe370ae7c612e2e93e8d22551478d7aa54b4"
+    },
+    {
+      "path": "extension/clean-ui/ToolbarMode.xcu",
+      "bytes": 3832,
+      "sha256": "53c3fffb5942495e4a3cb246c7375b43124a41cfb065bc7f6d83b49659a9c15a"
+    },
+    {
+      "path": "extension/clean-ui/Views.xcu",
+      "bytes": 1898,
+      "sha256": "b1ddfe1ca0e94ed5a498726b02226df5a7c256c9b24ea7ed5351467f375a8a14"
+    },
+    {
+      "path": "extension/clean-ui/Writer.xcu",
+      "bytes": 1211,
+      "sha256": "ff8e5258d3a4b090bf31aac756389c6607ad2d271cdb9c4d647d27a54a8074e4"
+    },
+    {
+      "path": "extension/clean-ui/WriterFormWindowState.xcu",
+      "bytes": 15673,
+      "sha256": "fce1daeda530427440b0e989cda204c6f2ffd9e8dfc033653b29c73df8ed0932"
+    },
+    {
+      "path": "extension/clean-ui/WriterGlobalWindowState.xcu",
+      "bytes": 16476,
+      "sha256": "86ad30808fbe87ac62dddc1abeb501ee741a643126882d7b3c5aba4321cfca84"
+    },
+    {
+      "path": "extension/clean-ui/WriterReportWindowState.xcu",
+      "bytes": 15675,
+      "sha256": "0f054cd4e20388b37933fcea71cf788fe023ef564258a81d9ee187cf6dcd4128"
+    },
+    {
+      "path": "extension/clean-ui/WriterWebWindowState.xcu",
+      "bytes": 13652,
+      "sha256": "e4f756fed7461ab1408dd7a5509ef72aa62d9d9013f969445dab29b05c81e66b"
+    },
+    {
+      "path": "extension/clean-ui/WriterWindowState.xcu",
+      "bytes": 24183,
+      "sha256": "95a0da3c0f55839c67ca376ef87d7228df4d2a8fee7135035b09153bce225074"
+    },
+    {
+      "path": "extension/clean-ui/XFormsWindowState.xcu",
+      "bytes": 15667,
+      "sha256": "e894e6c48b2986033042dc220125d045e672a118403ed5d687de30434aea080f"
+    },
+    {
+      "path": "extension/clean-ui/description.xml",
+      "bytes": 735,
+      "sha256": "90f54eb16283b284b41a1b8fa0925e8eb91a55aeaaf5b1795e0405dd6060238b"
+    },
+    {
+      "path": "extension/clean-ui/pkg-desc/pkg-description.txt",
+      "bytes": 149,
+      "sha256": "adf75c6212a0539781a704738c125f1dc5a22e20b8d6f22d3d21a21c93fea921"
     },
     {
       "path": "scripts/apply-windows-global-nologo.ps1",
@@ -34,19 +174,34 @@
       "sha256": "b4cacfefb4c28ba7c593fa0ba3d9e96479c2a8997ad92a57b53c4d0b01c4d70a"
     },
     {
+      "path": "scripts/build-policy.sh",
+      "bytes": 936,
+      "sha256": "1b0e4fe323b12266e99cdb3466218dacec349736be010fad69168afe6f4455d7"
+    },
+    {
+      "path": "scripts/generate-window-policy.py",
+      "bytes": 4968,
+      "sha256": "2796b0672fb76a40b5a57241f3af3c63fe06e5f95b7059c833dfd7371fe88a3c"
+    },
+    {
       "path": "scripts/restore.ps1",
-      "bytes": 3984,
-      "sha256": "f0f80d0fb16fcb234bfef04ada1f81c87b5aae7e18b510c6e3ab77451eebe5cf"
+      "bytes": 6155,
+      "sha256": "511d4a62b36058bfbd18f5df25a9c4dddf50618a1bb86c001f009444342d1e3e"
     },
     {
       "path": "scripts/restore.sh",
-      "bytes": 2382,
-      "sha256": "3c655b4c97c1124825a060e3b16b4d6f66f2956b026abd085a7d1195bed76761"
+      "bytes": 3929,
+      "sha256": "7c28e650e8db94e8b0ecfd61f8f8c361241f6fe3c75c071ca3586d2da3b230b3"
+    },
+    {
+      "path": "scripts/update-manifest.py",
+      "bytes": 2489,
+      "sha256": "a992b61d0e42701dc2685a7858bcdad4fa5d3b086a615ed6adb6e737aefd0ad0"
     },
     {
       "path": "settings/backup-summary.json",
-      "bytes": 1767,
-      "sha256": "cb469afd94e3a8c418924bed9c7a14c6097f54ef36d680a38340433970a0bf60"
+      "bytes": 1833,
+      "sha256": "b8a6605a63331e172485908b375806bfb0c447a832812183c7012c2623401d6f"
     },
     {
       "path": "settings/keyboard-shortcuts.office.json",
@@ -55,8 +210,8 @@
     },
     {
       "path": "settings/registrymodifications.portable.xcu",
-      "bytes": 459972,
-      "sha256": "530179cfa546a3a90b53ef2f6f66188388b6b6b7cecd3da7d248fa347ef512ca"
+      "bytes": 457884,
+      "sha256": "23c5b686dc57812c4d284d0daa26f318aa3ceaac33eae930096b7826c7dc06fd"
     },
     {
       "path": "windows/file-associations.nologo.json",

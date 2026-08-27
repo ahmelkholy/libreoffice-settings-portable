@@ -1,5 +1,6 @@
 param(
     [switch]$Replace,
+    [switch]$Merge,
     [switch]$WindowsNoLogo
 )
 
@@ -30,6 +31,45 @@ function Assert-LibreOfficeClosed {
         $names = ($running | ForEach-Object { "$($_.ProcessName)[$($_.Id)]" }) -join ', '
         throw "Close LibreOffice before restoring settings. Running process(es): $names"
     }
+}
+
+function Get-LibreOfficeUnopkg {
+    $candidates = [System.Collections.Generic.List[string]]::new()
+
+    if ($env:LIBREOFFICE_UNOPKG) {
+        $candidates.Add($env:LIBREOFFICE_UNOPKG)
+    }
+
+    foreach ($commandName in @('unopkg.com', 'unopkg.exe', 'unopkg')) {
+        $command = Get-Command $commandName -ErrorAction SilentlyContinue
+        if ($command) {
+            $candidates.Add($command.Source)
+        }
+    }
+
+    if ($IsWindows -or $env:OS -eq 'Windows_NT') {
+        foreach ($base in @($env:ProgramFiles, ${env:ProgramFiles(x86)}, $env:LOCALAPPDATA)) {
+            if ($base) {
+                $candidates.Add((Join-Path $base 'LibreOffice\program\unopkg.com'))
+                $candidates.Add((Join-Path $base 'LibreOffice\program\unopkg.exe'))
+            }
+        }
+    } elseif ($IsMacOS) {
+        $candidates.Add('/Applications/LibreOffice.app/Contents/MacOS/unopkg')
+        $candidates.Add((Join-Path $HOME 'Applications/LibreOffice.app/Contents/MacOS/unopkg'))
+    } else {
+        $candidates.Add('/usr/lib/libreoffice/program/unopkg')
+        $candidates.Add('/usr/lib64/libreoffice/program/unopkg')
+        $candidates.Add('/opt/libreoffice/program/unopkg')
+    }
+
+    foreach ($candidate in $candidates) {
+        if ($candidate -and (Test-Path -LiteralPath $candidate -PathType Leaf)) {
+            return $candidate
+        }
+    }
+
+    throw "LibreOffice's unopkg tool was not found. Set LIBREOFFICE_UNOPKG to its full path."
 }
 
 function New-EmptyXcuDocument {
@@ -63,10 +103,18 @@ function Get-XcuItemKey {
 
 Assert-LibreOfficeClosed
 
+if ($Replace -and $Merge) {
+    throw 'Choose either -Replace or -Merge, not both.'
+}
+
 $repo = Get-RepoRoot
 $source = Join-Path $repo 'settings/registrymodifications.portable.xcu'
 if (-not (Test-Path -LiteralPath $source)) {
     throw "Portable settings file not found: $source"
+}
+$policy = Join-Path $repo 'dist/portable-clean-libreoffice.oxt'
+if (-not (Test-Path -LiteralPath $policy)) {
+    throw "Clean-interface policy extension not found: $policy"
 }
 
 $profile = Get-LibreOfficeProfile
@@ -80,7 +128,19 @@ if (Test-Path -LiteralPath $target) {
     Write-Host "Backup: $backup"
 }
 
-if ($Replace -or -not (Test-Path -LiteralPath $target)) {
+$unopkg = Get-LibreOfficeUnopkg
+& $unopkg add --force --suppress-license $policy
+if ($LASTEXITCODE -ne 0) {
+    throw "Failed to install the clean-interface policy extension (exit code $LASTEXITCODE)."
+}
+
+& $unopkg validate org.ahmelkholy.libreoffice.cleanui
+if ($LASTEXITCODE -ne 0) {
+    throw 'The clean-interface policy extension did not register correctly.'
+}
+Write-Host 'Installed immutable clean-interface policy.'
+
+if (-not $Merge -or -not (Test-Path -LiteralPath $target)) {
     Copy-Item -LiteralPath $source -Destination $target -Force
     Write-Host "Replaced LibreOffice settings: $target"
 } else {

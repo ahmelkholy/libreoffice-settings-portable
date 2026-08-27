@@ -1,20 +1,73 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-mode="merge"
-if [[ "${1:-}" == "--replace" ]]; then
-  mode="replace"
-fi
+mode="replace"
+case "${1:-}" in
+  ""|--replace)
+    ;;
+  --merge)
+    mode="merge"
+    ;;
+  *)
+    echo "Usage: $0 [--replace|--merge]" >&2
+    exit 2
+    ;;
+esac
 
 repo_root="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 source_xcu="$repo_root/settings/registrymodifications.portable.xcu"
+policy_oxt="$repo_root/dist/portable-clean-libreoffice.oxt"
 
 if [[ ! -f "$source_xcu" ]]; then
   echo "Portable settings file not found: $source_xcu" >&2
   exit 1
 fi
 
-if pgrep -f 'soffice|libreoffice' >/dev/null 2>&1; then
+if [[ ! -f "$policy_oxt" ]]; then
+  echo "Clean-interface policy extension not found: $policy_oxt" >&2
+  exit 1
+fi
+
+find_unopkg() {
+  local candidate
+  local candidates=()
+
+  if [[ -n "${LIBREOFFICE_UNOPKG:-}" ]]; then
+    candidates+=("$LIBREOFFICE_UNOPKG")
+  fi
+
+  if command -v unopkg >/dev/null 2>&1; then
+    candidates+=("$(command -v unopkg)")
+  fi
+
+  case "$(uname -s)" in
+    Darwin)
+      candidates+=(
+        "/Applications/LibreOffice.app/Contents/MacOS/unopkg"
+        "$HOME/Applications/LibreOffice.app/Contents/MacOS/unopkg"
+      )
+      ;;
+    Linux)
+      candidates+=(
+        "/usr/lib/libreoffice/program/unopkg"
+        "/usr/lib64/libreoffice/program/unopkg"
+        "/opt/libreoffice/program/unopkg"
+      )
+      ;;
+  esac
+
+  for candidate in "${candidates[@]}"; do
+    if [[ -x "$candidate" ]]; then
+      printf '%s\n' "$candidate"
+      return 0
+    fi
+  done
+  return 1
+}
+
+if pgrep -x soffice >/dev/null 2>&1 ||
+   pgrep -x soffice.bin >/dev/null 2>&1 ||
+   pgrep -x libreoffice >/dev/null 2>&1; then
   echo "Close LibreOffice before restoring settings." >&2
   exit 1
 fi
@@ -40,6 +93,18 @@ if [[ -f "$target" ]]; then
   cp "$target" "$target.restore-backup-$timestamp"
   echo "Backup: $target.restore-backup-$timestamp"
 fi
+
+if ! unopkg_path="$(find_unopkg)"; then
+  echo "LibreOffice's unopkg tool was not found. Set LIBREOFFICE_UNOPKG to its full path." >&2
+  exit 1
+fi
+
+"$unopkg_path" add --force --suppress-license "$policy_oxt"
+if ! "$unopkg_path" validate org.ahmelkholy.libreoffice.cleanui; then
+  echo "The clean-interface policy extension did not register correctly." >&2
+  exit 1
+fi
+echo "Installed immutable clean-interface policy."
 
 if [[ "$mode" == "replace" || ! -f "$target" ]]; then
   cp "$source_xcu" "$target"

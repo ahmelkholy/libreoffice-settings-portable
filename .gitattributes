@@ -1,0 +1,2 @@
+# The canonical LibreOffice registry intentionally retains its native CRLF bytes.
+settings/registrymodifications.portable.xcu -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol

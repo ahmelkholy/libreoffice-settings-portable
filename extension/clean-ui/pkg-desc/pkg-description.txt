@@ -1,0 +1,2 @@
+Enforces the portable clean LibreOffice interface: no document toolbars,
+Writer zoom at 50%, hidden rulers, and a permanently hidden Zotero toolbar.
