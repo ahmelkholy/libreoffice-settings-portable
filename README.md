@@ -39,6 +39,13 @@ between operating systems.
   - Windows registry restore for `--nologo`, without creating shortcuts
 - `scripts/apply-windows-global-nologo.ps1`
   - Windows install-level `Logo=0` setting for app launches, without creating shortcuts
+- `scripts/start-portable.ps1`
+  - Starts the currently installed LibreOffice with a stable `portable-profile`
+  - Converts Windows document paths to `file:///...` URIs before opening
+- `scripts/start-portable.vbs`
+  - Windows GUI launcher for file associations, so opening documents does not show a console window
+- `scripts/apply-windows-portable-associations.ps1`
+  - Per-user file-association override so LibreOffice-owned files use the portable profile launcher
 
 ## What Is Not Included
 
@@ -116,6 +123,39 @@ On Windows:
 ```powershell
 git pull --ff-only
 powershell -ExecutionPolicy Bypass -File .\scripts\restore.ps1 -WindowsNoLogo
+```
+
+## Update-Resistant Windows Launcher
+
+LibreOffice updates can change the default user profile under
+`%APPDATA%\LibreOffice\4\user`. For a profile that survives updates, use the
+portable launcher instead:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\start-portable.ps1
+```
+
+Open a document through the same profile:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\start-portable.ps1 "D:\PROJECT-PHD-Thesis\Presentation\transcript.docx"
+```
+
+The launcher finds the current LibreOffice installation each time, initializes
+`portable-profile\user\registrymodifications.xcu` from the portable settings if
+needed, and keeps that runtime profile outside git.
+
+To make double-click/open commands use the portable profile for LibreOffice file
+classes:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\apply-windows-portable-associations.ps1
+```
+
+To remove those per-user overrides:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\scripts\apply-windows-portable-associations.ps1 -Remove
 ```
 
 ## Windows No-Splash Behavior

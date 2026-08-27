@@ -10,6 +10,7 @@ windows/soffice.ini-backups/
 *.tar.gz
 raw-profile/
 private/
+portable-profile/
 
 # OS/editor noise
 .DS_Store
