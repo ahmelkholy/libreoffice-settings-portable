@@ -31,6 +31,13 @@ Host: macOS 26.6.2, Apple Silicon; LibreOffice 26.8.2.2.
 - Shell syntax, Python parsing, XML parsing, Linux YAML syntax (24 bindings), and
   Git whitespace checks passed. The GitHub remote was fetched; the starting
   checkout matched `origin/main`.
+- [GitHub Actions run 42050183364](https://github.com/ahmelkholy/libreoffice-settings-portable/actions/runs/42050183364)
+  passed all 17 configuration tests on macOS, Windows and Linux. The Windows
+  PowerShell scripts parsed successfully, and the Swift opener compiled on macOS.
+  The workflow also validates the standalone Windows keyboard adapter and its
+  included companion with AutoHotkey v1's parse-only `/iLib` mode, using the
+  checksum-pinned official 1.1.37.02 archive. See the
+  [AutoHotkey command-line documentation](https://github.com/AutoHotkey/AutoHotkeyDocs/blob/v1/docs/Scripts.htm#cmd).
 
 ## Boundaries
 
@@ -43,11 +50,11 @@ and ODP during setup. Those types retain normal native opening. The adapter is
 registered for them and can be selected through Finder's Open with → Change All.
 DOCX, XLSX, PPTX and the other reported successful associations use the adapter.
 
-Windows and Linux machines were not available. Their native profile paths,
-shared settings and adapter sources are prepared; Windows AutoHotkey/PowerShell
-execution and Linux xremap/Wayland behavior still require host verification.
-The included GitHub Actions matrix runs the configuration tests on all three
-OSes after publication; it does not emulate their graphical desktop sessions.
+Windows and Linux graphical desktop sessions were not available. Their native
+profile paths and shared settings passed the hosted configuration tests; actual
+AutoHotkey input, full SHK integration, Windows setup execution and Linux
+xremap/Wayland behavior still require host verification. The GitHub Actions
+matrix does not emulate those graphical desktop sessions.
 Physical CapsLock chords were checked by the routing model, not hardware typing.
 
 ## Check on the next computer

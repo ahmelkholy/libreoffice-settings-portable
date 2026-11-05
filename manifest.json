@@ -1,6 +1,6 @@
 {
   "schema": "libreoffice-settings-portable-manifest-v2",
-  "generatedAt": "2026-11-05T16:57:41+02:00",
+  "generatedAt": "2026-11-05T17:08:30+02:00",
   "sourceProfile": "redacted local LibreOffice user profile",
   "portableFolder": "repository root",
   "separateNativeProfilePerOS": true,
@@ -21,8 +21,8 @@
     },
     {
       "path": ".github/workflows/settings.yml",
-      "bytes": 1159,
-      "sha256": "89c34e4b3a30bf1e2ea70c07c7e6588139b846da0bdc1701e9d0d6c0544f1b67"
+      "bytes": 2151,
+      "sha256": "93eaa979a383134647781c2e41b55038559e0a5b40dd82b4f0e8ced517e036db"
     },
     {
       "path": ".gitignore",
@@ -61,8 +61,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 3841,
-      "sha256": "630e32e56286db994ee33d09e7f53fcbbc51fed1e35b5b63b6ef31b48b9673e7"
+      "bytes": 4427,
+      "sha256": "04c12499213bedb6e556198d6512d2cc842f1995398add4bdbf5967f772a8e62"
     },
     {
       "path": "VIM.md",

@@ -30,3 +30,16 @@ jobs:
       - name: Compile the native macOS opener
         if: runner.os == 'macOS'
         run: swiftc -swift-version 5 macos/LibreOfficeOpen.swift -o "$RUNNER_TEMP/LibreOfficeOpen"
+      - name: Validate the Windows keyboard scripts with AutoHotkey v1
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $archive = Join-Path $env:RUNNER_TEMP 'AutoHotkey.zip'
+          $destination = Join-Path $env:RUNNER_TEMP 'AutoHotkey'
+          Invoke-WebRequest 'https://github.com/AutoHotkey/AutoHotkey/releases/download/v1.1.37.02/AutoHotkey_1.1.37.02.zip' -OutFile $archive
+          $expected = '6f3663f7cdd25063c8c8728f5d9b07813ced8780522fd1f124ba539e2854215f'
+          if ((Get-FileHash $archive -Algorithm SHA256).Hash -ne $expected) { throw 'AutoHotkey archive checksum mismatch' }
+          Expand-Archive $archive -DestinationPath $destination
+          # /iLib validates syntax without executing the script or installing hooks.
+          & (Join-Path $destination 'AutoHotkeyU64.exe') /ErrorStdOut=UTF-8 /iLib NUL windows/vim-standalone.ahk | Out-Host
+          if ($LASTEXITCODE -ne 0) { throw "AutoHotkey validation failed: $LASTEXITCODE" }
