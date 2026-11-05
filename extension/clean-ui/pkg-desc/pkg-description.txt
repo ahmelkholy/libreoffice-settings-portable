@@ -1,2 +1,1 @@
-Enforces the portable clean LibreOffice interface: no document toolbars,
-Writer zoom at 50%, hidden rulers, and a permanently hidden Zotero toolbar.
+Native side essentials for Writer, Calc, Impress and Draw: compact actions on the left, contextual properties on the right, horizontal toolbars hidden by default. Native menus remain available. No macros or document transformations.

@@ -6,34 +6,34 @@
     oor:package="org.openoffice.Office">
   <node oor:name="Content">
     <node oor:name="Zoom">
-      <prop oor:name="DefaultZoom" oor:finalized="true">
+      <prop oor:name="DefaultZoom">
         <value>false</value>
       </prop>
-      <prop oor:name="ZoomType" oor:finalized="true">
+      <prop oor:name="ZoomType">
         <value>0</value>
       </prop>
-      <prop oor:name="ZoomValue" oor:finalized="true">
+      <prop oor:name="ZoomValue">
         <value>50</value>
       </prop>
     </node>
   </node>
   <node oor:name="Layout">
     <node oor:name="Window">
-      <prop oor:name="HorizontalRuler" oor:finalized="true">
+      <prop oor:name="HorizontalRuler">
         <value>false</value>
       </prop>
-      <prop oor:name="ShowRulers" oor:finalized="true">
+      <prop oor:name="ShowRulers">
         <value>false</value>
       </prop>
-      <prop oor:name="VerticalRuler" oor:finalized="true">
+      <prop oor:name="VerticalRuler">
         <value>false</value>
       </prop>
     </node>
     <node oor:name="Zoom">
-      <prop oor:name="Type" oor:finalized="true">
+      <prop oor:name="Type">
         <value>0</value>
       </prop>
-      <prop oor:name="Value" oor:finalized="true">
+      <prop oor:name="Value">
         <value>50</value>
       </prop>
     </node>

@@ -1,0 +1,32 @@
+name: Portable settings checks
+on:
+  push:
+    branches: [main]
+  pull_request:
+jobs:
+  configuration:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+      - name: Check settings safety, paths, packaged XML and keyboard scope
+        run: python -m unittest discover -s tests -v
+      - name: Parse the Windows setup and launcher scripts
+        if: runner.os == 'Windows'
+        shell: pwsh
+        run: |
+          $files = @(Get-Item Setup.ps1) + @(Get-ChildItem scripts -Filter '*.ps1')
+          foreach ($file in $files) {
+            $tokens = $null
+            $errors = $null
+            [void][System.Management.Automation.Language.Parser]::ParseFile($file.FullName, [ref]$tokens, [ref]$errors)
+            if ($errors.Count) { throw ($errors | Out-String) }
+          }
+      - name: Compile the native macOS opener
+        if: runner.os == 'macOS'
+        run: swiftc -swift-version 5 macos/LibreOfficeOpen.swift -o "$RUNNER_TEMP/LibreOfficeOpen"

@@ -1,0 +1,36 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "LibreOffice: Doctor",
+      "type": "process",
+      "command": "python3",
+      "args": ["${workspaceFolder:LibreOffice}/scripts/lo-settings.py", "doctor"],
+      "windows": {"command": "py", "args": ["-3", "${workspaceFolder:LibreOffice}/scripts/lo-settings.py", "doctor"]},
+      "problemMatcher": []
+    },
+    {
+      "label": "LibreOffice: Apply synced settings (quit LibreOffice first)",
+      "type": "process",
+      "command": "python3",
+      "args": ["${workspaceFolder:LibreOffice}/scripts/lo-settings.py", "apply"],
+      "windows": {"command": "py", "args": ["-3", "${workspaceFolder:LibreOffice}/scripts/lo-settings.py", "apply"]},
+      "problemMatcher": []
+    },
+    {
+      "label": "LibreOffice: Export settings changes (quit LibreOffice first)",
+      "type": "process",
+      "command": "python3",
+      "args": ["${workspaceFolder:LibreOffice}/scripts/lo-settings.py", "export"],
+      "windows": {"command": "py", "args": ["-3", "${workspaceFolder:LibreOffice}/scripts/lo-settings.py", "export"]},
+      "problemMatcher": []
+    },
+    {
+      "label": "LibreOffice: Repair macOS file opening",
+      "type": "process",
+      "command": "python3",
+      "args": ["${workspaceFolder:LibreOffice}/scripts/lo-settings.py", "repair-macos"],
+      "problemMatcher": []
+    }
+  ]
+}

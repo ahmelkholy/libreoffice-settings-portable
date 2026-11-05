@@ -1,199 +1,150 @@
-# LibreOffice Portable Settings
+# LibreOffice: one shared settings folder
 
-This folder is a GitHub-ready, sanitized backup of a LibreOffice user profile.
-It is designed to move UI, Writer formatting aids, keyboard shortcuts, and
-text-direction settings between Windows, Linux, and macOS.
+Canonical repository: https://github.com/ahmelkholy/libreoffice-settings-portable
 
-The repository contains one canonical, portable settings profile. Apply that
-profile on every machine; do not copy an entire live LibreOffice profile
-between operating systems.
+Use this same checkout on macOS, Windows and Linux. It contains the shared
+preferences, native side toolbar, interface policy, keyboard adapters, setup,
+backup and diagnostic tools. `Keys.code-workspace` points to this folder. The
+standalone `LibreOffice.code-workspace` opens with relative paths on every OS.
 
-## What Is Included
+## Everyday use
 
-- `settings/registrymodifications.portable.xcu`
-  - Minimal menu-first UI with every toolbar and the sidebar hidden
-  - Writer formatting marks: spaces, tabs, paragraph marks, breaks, hidden text
-  - Writer text/table/section boundaries
-  - Writer opens new and loaded documents at 50% zoom
-  - Zotero's Writer toolbar stays hidden
-  - Complex text layout controls for LTR/RTL work
-  - Microsoft Office-style Writer shortcuts layered over LibreOffice defaults
-  - No saved screen coordinates or window dimensions, so different displays
-    and operating systems choose safe native window placement
-- `dist/portable-clean-libreoffice.oxt`
-  - Configuration policy installed automatically by both restore scripts
-  - Enforces the toolbar-free interface, hidden Zotero toolbar, hidden Writer
-    rulers, and 50% Writer zoom
-  - Covers Writer, Calc, Impress, Draw, Math, Base, and related LibreOffice views
-- `extension/clean-ui`
-  - Auditable source for the policy extension
-- `settings/backup-summary.json`
-  - JSON summary of what was exported and what was intentionally excluded
-- `windows/file-associations.nologo.json`
-  - Windows per-user LibreOffice file-association commands with `--nologo`
-- `scripts/restore.ps1`
-  - Cross-platform PowerShell restore script
-- `scripts/restore.sh`
-  - Linux/macOS restore script using Python 3
-- `scripts/apply-windows-nologo-associations.ps1`
-  - Windows registry restore for `--nologo`, without creating shortcuts
-- `scripts/apply-windows-global-nologo.ps1`
-  - Windows install-level `Logo=0` setting for app launches, without creating shortcuts
-- `scripts/start-portable.ps1`
-  - Starts the currently installed LibreOffice with a stable `portable-profile`
-  - Refreshes the canonical settings and locked policy on every cold launch
-  - Converts Windows document paths to `file:///...` URIs before opening
-- `scripts/start-portable.vbs`
-  - Windows GUI launcher for file associations, so opening documents does not show a console window
-- `scripts/apply-windows-portable-associations.ps1`
-  - Per-user file-association override so LibreOffice-owned files use the portable profile launcher
+Open documents normally. On macOS the installed **LibreOffice Open** adapter
+forwards files directly to the current LibreOffice executable and activates the
+application. It uses the normal profile, keeps save/recovery prompts, and never
+force-quits LibreOffice. It does not rewrite settings on each launch.
 
-## What Is Not Included
+The layout is designed around vertical document space:
 
-This public/shareable backup intentionally excludes recent files, recovery
-entries, thumbnails, local paths, and user profile data. A separate private raw
-archive was created locally for full recovery. Do not publish the private raw
-archive unless you have inspected it.
+- **Left:** nine native actions: Open, Save, Undo, Redo, Cut, Copy, Paste, Find,
+  and Export PDF.
+- **Right:** LibreOffice's contextual sidebar: properties, formatting, styles,
+  navigation and application-specific tools.
+- Horizontal toolbars and the status bar start hidden. Native menus remain
+  available, including View → User Interface to choose another native layout. These
+  are defaults, not permanent locks on the interface.
+- The existing Writer formatting marks, hidden rulers and 50% initial zoom
+  remain. Default save formats are DOCX, XLSX and PPTX. Recovery is enabled
+  every five minutes and backup copies are enabled.
 
-## Restore
+Hold **CapsLock** for navigation; release it to type normally. See [VIM.md](VIM.md)
+for the exact keys and per-OS keyboard setup. There are no document macros,
+Normal/Insert mode switches, or unmodified letter-key overrides.
 
-Close LibreOffice first.
+## Setup on each computer
 
-Windows PowerShell:
+Install LibreOffice and Python **3.9 or newer**, then save your work and quit
+LibreOffice. The scripts refuse to apply settings while any LibreOffice or
+extension-manager process is running.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\restore.ps1 -WindowsNoLogo
+| Platform | Run from this folder | Keyboard adapter |
+| --- | --- | --- |
+| macOS | Double-click `Setup.command`, or `bash setup.sh` | Karabiner-Elements (existing SHK supported) |
+| Windows | `powershell -ExecutionPolicy Bypass -File .\Setup.ps1` | Existing AutoHotkey v1 SHK, or the included standalone script |
+| Linux | `bash setup.sh` | Optional xremap config in `linux/vim-navigation.yml` |
+
+macOS builds its opener using Apple's Command Line Tools (`xcode-select --install`
+if missing). The keyboard installer reuses SHK if present; otherwise it creates a LibreOffice-only
+held layer in the selected Karabiner profile. No separate SHK checkout is required.
+The installed app lives in `~/Applications`; all its source lives
+in this repository. It only takes over Office document types already assigned
+to LibreOffice, preserving defaults owned by other apps. Some types can retain
+their native handler; setup reports these explicitly. Finder → Get Info → Open
+with → LibreOffice Open → Change All can select the adapter for them. Re-run setup after
+moving the repository or reinstalling LibreOffice.
+
+Windows setup looks for `../SHK/shk.ahk` and inserts one include pointing to this
+folder. Set `SHK_SCRIPT` to use another SHK location. Reload SHK afterward. On a
+machine without SHK, use `windows/vim-standalone.ahk` with AutoHotkey v1; do not
+run it alongside SHK. Normal Windows LibreOffice associations continue to work.
+
+Linux setup applies the profile; start xremap separately after configuring its
+required desktop integration/device access. Its application filter must identify
+LibreOffice correctly. Flatpak/custom installations must supply the actual
+`--profile` directory and matching `LIBREOFFICE_UNOPKG`; the native default is
+`${XDG_CONFIG_HOME:-~/.config}/libreoffice/4/user`.
+
+## Sync through GitHub
+
+The checkout is the shared source; each OS keeps its own native runtime profile.
+Do not point multiple OSes at one live profile. Exclude `.local/`, `.git/`,
+`portable-profile/`, locks and caches from cloud-folder synchronization.
+Git already ignores the private runtime and backup directories.
+
+On the computer where you changed a managed preference:
+
+```sh
+# Quit LibreOffice first; Windows uses `py -3` instead of `python3`.
+python3 scripts/lo-settings.py export
+python3 scripts/update-manifest.py
+git diff
+# Review, then commit and push your intended changes.
 ```
 
-Linux/macOS:
+On another computer:
 
-```bash
-bash ./scripts/restore.sh
-```
-
-PowerShell on Linux/macOS also works if `pwsh` is installed:
-
-```powershell
-pwsh ./scripts/restore.ps1
-```
-
-By default, restore replaces `registrymodifications.xcu` with the repository's
-single canonical profile. The old file is backed up first. Installed extensions
-and documents are not removed. The script also force-updates the clean-interface
-policy extension and verifies its registration.
-
-Use merge mode only when you intentionally need to retain machine-specific or
-older LibreOffice preferences:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\restore.ps1 -Merge
-```
-
-```bash
-bash ./scripts/restore.sh --merge
-```
-
-The default replacement mode is what guarantees the same 50% zoom, hidden
-sidebar, and toolbar-free interface on every OS. `--replace`/`-Replace` remains
-available as an explicit spelling of the default. Merge mode is less strict and
-can preserve stale UI state, so it is not recommended for the reference setup.
-
-The Zotero integration extension itself is not included. Install it through
-Zotero on each machine; this profile controls only its LibreOffice toolbar.
-
-## Updates and Reliability
-
-The policy extension is stored separately from LibreOffice's application files,
-so normal LibreOffice and Zotero updates do not replace it. The restore scripts
-also reinstall it with `--force`, making the Git checkout the canonical copy.
-
-A LibreOffice factory reset, Safe Mode profile reset, or a newly installed OS
-creates a new user profile and can remove user settings and extensions. In that
-case, pull this repository and run the restore script again. This is the
-recovery path; no full cross-platform profile copy is needed.
-
-To synchronize another machine:
-
-```bash
+```sh
 git pull --ff-only
-bash ./scripts/restore.sh
+bash setup.sh
+# Windows: powershell -ExecutionPolicy Bypass -File .\Setup.ps1
 ```
 
-On Windows:
+Export captures only the managed preferences already in the shared XML. New
+private settings, identities, recent documents, recovery sessions, credentials,
+local paths and hardware identifiers are never automatically imported. Custom
+fonts, Zotero and dictionaries/extensions must be installed on each OS; existing
+local installations, templates, dictionaries and documents are preserved.
 
-```powershell
-git pull --ff-only
-powershell -ExecutionPolicy Bypass -File .\scripts\restore.ps1 -WindowsNoLogo
+## Useful commands
+
+```sh
+python3 scripts/lo-settings.py doctor
+python3 scripts/lo-settings.py apply
+python3 scripts/lo-settings.py open "/path with spaces/document.docx"
+python3 scripts/lo-settings.py repair-macos
+python3 scripts/install-vim-macos.py --remove
+python3 scripts/lo-settings.py uninstall-macos-opener
+python3 scripts/lo-settings.py rollback .local/backups/<backup-name>
 ```
 
-## Update-Resistant Windows Launcher
+`apply` merges shared settings into the local registry, backs up the previous
+file, updates the UI extension and installs the essential toolbar in the four
+main modules. `--replace` is an explicit full registry replacement; normal setup
+never uses it. `--profile /path/to/4/user` precedes the subcommand when needed.
+The original `restore.sh` and `restore.ps1` now use this safe merge by default.
 
-LibreOffice updates can change the default user profile under
-`%APPDATA%\LibreOffice\4\user`. For a profile that survives updates, use the
-portable launcher instead:
+`rollback` restores the saved registry file. The UI extension and toolbar files
+are separate assets; for a complete return to the prior UI use the private
+full-profile archive, with LibreOffice closed. Local backups are in `.local/backups`.
+The full archive made during the 2026-11-05 work predates the side-layout changes.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\start-portable.ps1
+If an opening problem recurs, double-click `Repair LibreOffice.command` or run
+Doctor from the VS Code tasks. The repair reinstalls the opener/associations; it
+does not kill the application or discard unsaved work. A busy modal dialog or
+an internal LibreOffice hang still needs to be resolved in LibreOffice itself.
+
+The old Windows `start-portable.ps1` entry point now opens the **native** profile
+without resetting it. Its old `portable-profile` folder is preserved. Legacy
+Windows no-splash scripts remain optional; they are not needed for profile sync.
+
+## Source and verification
+
+- `settings/`: shared XML, essentials toolbar and shortcut descriptions.
+- `extension/clean-ui/`: native configuration extension source, version 2.0.0.
+  The historical extension ID is retained so it upgrades the existing policy.
+- `macos/`, `windows/`, `linux/`: adapters within this one repository.
+- `scripts/`: one cross-platform settings engine and host-specific installers.
+- `.local/`: ignored machine data, builds, verification fixtures and backups.
+
+```sh
+python3 -m unittest discover -s tests -v
+bash scripts/build-policy.sh
+python3 scripts/update-manifest.py
 ```
 
-Open a document through the same profile:
+See [VALIDATION.md](VALIDATION.md) for what was actually checked. Windows and
+Linux desktop behavior must be verified on those machines; this Mac cannot
+certify their input hooks, desktop detection or installed fonts/extensions.
 
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\start-portable.ps1 "D:\PROJECT-PHD-Thesis\Presentation\transcript.docx"
-```
-
-The launcher finds the current LibreOffice installation each time and keeps its
-runtime profile in the git-ignored `portable-profile` folder. On every cold
-launch it force-installs the policy and replaces the runtime settings with the
-canonical Git copy. If that profile is already open, it leaves the live files
-alone and forwards the document to the running instance. Do not use
-`--nolockcheck`; the launcher intentionally respects LibreOffice's profile lock.
-
-This optional launcher uses a separate LibreOffice profile. If you need Zotero
-commands as well as a hidden Zotero toolbar, install Zotero's LibreOffice
-integration once for this portable profile.
-
-To make double-click/open commands use the portable profile for LibreOffice file
-classes:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\apply-windows-portable-associations.ps1
-```
-
-To remove those per-user overrides:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\apply-windows-portable-associations.ps1 -Remove
-```
-
-## Windows No-Splash Behavior
-
-The splash setting is not fully portable inside LibreOffice's user profile.
-On Windows, this repo provides two no-shortcut options:
-
-- Install-level app launch behavior through `soffice.ini` with `Logo=0`.
-- Per-user file-association overrides that add `--nologo` when LibreOffice-owned documents are opened.
-
-For app launches, run as administrator:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\apply-windows-global-nologo.ps1
-```
-
-For document file associations, run:
-
-```powershell
-powershell -ExecutionPolicy Bypass -File .\scripts\apply-windows-nologo-associations.ps1
-```
-
-## Rebuilding the Policy
-
-The built `.oxt` is committed so Windows, Linux, and macOS machines can restore
-without build tools. Maintainers can regenerate the window-state policy from an
-installed LibreOffice registry and rebuild the package:
-
-```bash
-./scripts/generate-window-policy.py /path/to/libreoffice/share/registry
-./scripts/build-policy.sh
-./scripts/update-manifest.py
-```
+Implementation references: [LibreOffice command-line parameters](https://help.libreoffice.org/latest/en-US/text/shared/guide/start_parameters.html)
+and [native keyboard customization](https://help.libreoffice.org/latest/en-US/text/shared/01/06140200.html).

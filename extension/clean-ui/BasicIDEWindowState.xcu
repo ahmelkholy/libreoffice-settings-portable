@@ -7,102 +7,102 @@
   <node oor:name="UIElements">
     <node oor:name="States">
       <node oor:name="private:resource/toolbar/addon_Zotero.OfficeToolBar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/dialogbar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/findbar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/formcontrolsbar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/fullscreenbar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/insertcontrolsbar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/macrobar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/standardbar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
       <node oor:name="private:resource/toolbar/translationbar">
-        <prop oor:name="Visible" oor:finalized="true">
+        <prop oor:name="Visible">
           <value>false</value>
         </prop>
-        <prop oor:name="ContextSensitive" oor:finalized="true">
+        <prop oor:name="ContextSensitive">
           <value>false</value>
         </prop>
-        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">
-          <value>true</value>
+        <prop oor:name="HideFromToolbarMenu">
+          <value>false</value>
         </prop>
       </node>
     </node>

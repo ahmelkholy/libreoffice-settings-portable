@@ -51,12 +51,13 @@ def file_record(relative_path: Path) -> dict[str, object]:
 
 def main() -> None:
     payload = {
-        "schema": "libreoffice-settings-portable-manifest-v1",
+        "schema": "libreoffice-settings-portable-manifest-v2",
         "generatedAt": datetime.now().astimezone().isoformat(timespec="seconds"),
         "sourceProfile": "redacted local LibreOffice user profile",
         "portableFolder": "repository root",
-        "noShortcuts": True,
-        "windowsGlobalNoSplash": "Logo=0",
+        "separateNativeProfilePerOS": True,
+        "sharedLayout": "left essentials toolbar and right contextual sidebar",
+        "windowsGlobalNoSplash": "optional legacy helper",
         "privateArchive": {
             "createdOnThisMachine": True,
             "trackedInGit": False,
@@ -67,10 +68,9 @@ def main() -> None:
             ),
         },
         "note": (
-            "No desktop or Start Menu shortcuts are required or created. The canonical "
-            "LibreOffice registry and clean-interface policy are restored together. "
-            "Windows no-splash is handled by install-level Logo=0 and optional per-user "
-            "file-association overrides."
+            "One repository contains shared preferences, side-toolbar assets and OS adapters. "
+            "Setup merges settings into each OS's native profile. Local backups, profile "
+            "state, association records and generated applications are excluded from Git."
         ),
         "files": [file_record(path) for path in repository_files()],
     }

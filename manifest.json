@@ -1,97 +1,138 @@
 {
-  "schema": "libreoffice-settings-portable-manifest-v1",
-  "generatedAt": "2026-08-27T20:01:59+03:00",
+  "schema": "libreoffice-settings-portable-manifest-v2",
+  "generatedAt": "2026-11-05T16:57:41+02:00",
   "sourceProfile": "redacted local LibreOffice user profile",
   "portableFolder": "repository root",
-  "noShortcuts": true,
-  "windowsGlobalNoSplash": "Logo=0",
+  "separateNativeProfilePerOS": true,
+  "sharedLayout": "left essentials toolbar and right contextual sidebar",
+  "windowsGlobalNoSplash": "optional legacy helper",
   "privateArchive": {
     "createdOnThisMachine": true,
     "trackedInGit": false,
     "pathRedacted": true,
     "note": "A private full-profile archive was created outside this repository. Do not publish raw profile archives without review."
   },
-  "note": "No desktop or Start Menu shortcuts are required or created. The canonical LibreOffice registry and clean-interface policy are restored together. Windows no-splash is handled by install-level Logo=0 and optional per-user file-association overrides.",
+  "note": "One repository contains shared preferences, side-toolbar assets and OS adapters. Setup merges settings into each OS's native profile. Local backups, profile state, association records and generated applications are excluded from Git.",
   "files": [
     {
       "path": ".gitattributes",
-      "bytes": 196,
-      "sha256": "70512bc5c3bdbc70ad3754a69abe93765d94b689b8757ae3d26c2337099a96fe"
+      "bytes": 259,
+      "sha256": "dbf860a64609f1f4dd9f87b6a72b67bb3a9dd4835845a6327b8a40740fdd0d02"
+    },
+    {
+      "path": ".github/workflows/settings.yml",
+      "bytes": 1159,
+      "sha256": "89c34e4b3a30bf1e2ea70c07c7e6588139b846da0bdc1701e9d0d6c0544f1b67"
     },
     {
       "path": ".gitignore",
-      "bytes": 287,
-      "sha256": "ab4d7fe31cedb49acce01cbbcff0aff9a1ee36702f22076eba46308365d07648"
+      "bytes": 314,
+      "sha256": "1be0ba3be00591b170fb5b3d8bd381a6a47102f28787960014a97a4ecbfce014"
+    },
+    {
+      "path": ".vscode/tasks.json",
+      "bytes": 1360,
+      "sha256": "b37d55a7ffe6d9ef78e3f31d75ca6a019537065d20e8ddf7c5909845770bb9a4"
+    },
+    {
+      "path": "LibreOffice.code-workspace",
+      "bytes": 74,
+      "sha256": "3cb64fd57c4f67064d36bed5ab272934f368bf5492218b8d8da9419ea88ed806"
     },
     {
       "path": "README.md",
-      "bytes": 7483,
-      "sha256": "ff187145c5af7188e80d0768e19fc8fa16444ccda501c46644f69da013f1fad2"
+      "bytes": 7586,
+      "sha256": "00a9fc11c0b2a7a145771a8fe7c0a44ca6d587c51a2111101934b5194e880a4c"
+    },
+    {
+      "path": "Repair LibreOffice.command",
+      "bytes": 154,
+      "sha256": "99204ffbd9520900051a0feffbd75c3860f7f7993d85720ba166654b5b34e826"
+    },
+    {
+      "path": "Setup.command",
+      "bytes": 80,
+      "sha256": "ea610db571041b984c62c4878205adbc6d04945f69548ff7311e1c823fe381b8"
+    },
+    {
+      "path": "Setup.ps1",
+      "bytes": 580,
+      "sha256": "7df42ef1c73e0aa01526b9f37581a3537a80e379c08f9764f2d84f4e5f49b18e"
+    },
+    {
+      "path": "VALIDATION.md",
+      "bytes": 3841,
+      "sha256": "630e32e56286db994ee33d09e7f53fcbbc51fed1e35b5b63b6ef31b48b9673e7"
+    },
+    {
+      "path": "VIM.md",
+      "bytes": 3857,
+      "sha256": "57993ae367474b0404cb5e8b67f22a30fd7d3f96de2351d9c32b47d0eef23455"
     },
     {
       "path": "dist/portable-clean-libreoffice.oxt",
-      "bytes": 15194,
-      "sha256": "29e4e986d56bbfb19a2fc0ae32127f57507b2a902d8f76a4fbff502b7fe1fcc1"
+      "bytes": 15107,
+      "sha256": "87cd6c5960e2461c1453acb5f9176a32277678bf1ddbe8e5b6740e3e030a665c"
     },
     {
       "path": "extension/clean-ui/BaseWindowState.xcu",
-      "bytes": 2767,
-      "sha256": "e66f9938214305e6fc8b91a4b3a0626a7f83e3e73fcda8b3bb393fbd451d3325"
+      "bytes": 2395,
+      "sha256": "da4529ee9c7da20c371838c0491ccd8dadc3613ebc842d9982484c541679f6bc"
     },
     {
       "path": "extension/clean-ui/BasicIDEWindowState.xcu",
-      "bytes": 3972,
-      "sha256": "ada35c7b2cfe233cd7f623f914863b5b53147b7fd848a3816062aaa1fd13aaa8"
+      "bytes": 3414,
+      "sha256": "e2afb1af2b52161ff2e2d04435ebf2e78b501e578ca3bd8e8ab1ef73111602be"
     },
     {
       "path": "extension/clean-ui/CalcWindowState.xcu",
-      "bytes": 16048,
-      "sha256": "a6944cb35240268656db33cdf09bd209a4febac8f2bd59845667f843a9349e51"
+      "bytes": 14179,
+      "sha256": "14e2b08cff792a5e4d45bd45118590f7f3a2698be4f7dc816428a17c8a6125e4"
     },
     {
       "path": "extension/clean-ui/ChartWindowState.xcu",
-      "bytes": 4362,
-      "sha256": "af7cf69d2092db6652eb14de37e6a936c52156cf717a89dc553efbdc5482220d"
+      "bytes": 3742,
+      "sha256": "a0e749f0601439c7ffccdafd76cfe1a15702bc4fc30b24b61950cbf3a6ecefe0"
     },
     {
       "path": "extension/clean-ui/DbBrowserWindowState.xcu",
-      "bytes": 1156,
-      "sha256": "671e441d07d4608c8fade63b7c333a924f2b240ccf24dba81a63417fcdd8a78d"
+      "bytes": 1032,
+      "sha256": "9da10fb178269c5ada9d57f68046a4d3a0f92d67b72c199c581b00332b8f443e"
     },
     {
       "path": "extension/clean-ui/DbQueryWindowState.xcu",
-      "bytes": 1961,
-      "sha256": "024514a26ea203628f2469b4453704281bdfe0d0b18c4131ff75e6945b8ef85b"
+      "bytes": 1713,
+      "sha256": "b2d39dfe7c7d7c9a8c4f9fbba946073bd2ccc634e206b5ae29e98c6f4666760b"
     },
     {
       "path": "extension/clean-ui/DbRelationWindowState.xcu",
-      "bytes": 1157,
-      "sha256": "b95b51c0f62c5e063251f9d7f036430163552b6090b4ead3ed5950aad3b983a8"
+      "bytes": 1033,
+      "sha256": "cb68a9fac758a3401623da992efc37c289ec235ae83007d7ee7bcbcbe69ceeb7"
     },
     {
       "path": "extension/clean-ui/DbReportWindowState.xcu",
-      "bytes": 3972,
-      "sha256": "f3df595aa16f2195889b10f423c2091d2da6ca4056b4649a7359d301fe906fc8"
+      "bytes": 3414,
+      "sha256": "4d6ce593dc3cb4d538374afbae868df5a492040f6700ad3daddc8c6a747aff49"
     },
     {
       "path": "extension/clean-ui/DbTableDataWindowState.xcu",
-      "bytes": 1158,
-      "sha256": "a5508d1f6afe3db7930f84e9a9b01daa2dcce24f6ccd17ae7e8f0368e6b86077"
+      "bytes": 1034,
+      "sha256": "fe04e14f106cbaaa6c16fd47f26b5ae67251f0eb89faeeef9085a72944e24a6f"
     },
     {
       "path": "extension/clean-ui/DbTableWindowState.xcu",
-      "bytes": 1154,
-      "sha256": "b2c1ba9ed7a3d6510ddb83f1e15d268ee878b1fa5d365b3433ea5dcfea410573"
+      "bytes": 1030,
+      "sha256": "323c0419fa4190223248ab82df2457d95c06b0f6a6f7b784054f4c5e1388f86b"
     },
     {
       "path": "extension/clean-ui/DrawWindowState.xcu",
-      "bytes": 19675,
-      "sha256": "df0fd008e4a7ab332d233c4e68560f3981af1f8a05bb041f0d8c9953e4c3a8fd"
+      "bytes": 17248,
+      "sha256": "cb05906b00565f6223c79f4ae6a6e996f2ed3cdd96405866454d7288aa32a07b"
     },
     {
       "path": "extension/clean-ui/ImpressWindowState.xcu",
-      "bytes": 21707,
-      "sha256": "de4ea4dae8a1df652df5bf34cda46b1ef4f06270919cfa78463245feacb46880"
+      "bytes": 18970,
+      "sha256": "7e7ddb0001de21f3f47bcf9dbe44c1207be53460a9662060b6cc5d3f4f8024d3"
     },
     {
       "path": "extension/clean-ui/META-INF/manifest.xml",
@@ -100,68 +141,83 @@
     },
     {
       "path": "extension/clean-ui/MathWindowState.xcu",
-      "bytes": 1955,
-      "sha256": "fe29f882e4bc0f39bcdcc0d8ba5e8647ccfcd1aafc4701f090954c35eada1415"
+      "bytes": 1707,
+      "sha256": "54bb65ae81c5c5bbb499fe547188e24939d3f4ec29e290555279632b63d3b3d6"
     },
     {
       "path": "extension/clean-ui/StartModuleWindowState.xcu",
-      "bytes": 1162,
-      "sha256": "eb4bd0c97da30a4de71ad610cc9dfe370ae7c612e2e93e8d22551478d7aa54b4"
+      "bytes": 1038,
+      "sha256": "0d0c362a8b63097a847291d450fadfa2150816f7d982f82a5c90ed69bfdfb264"
     },
     {
       "path": "extension/clean-ui/ToolbarMode.xcu",
-      "bytes": 3832,
-      "sha256": "53c3fffb5942495e4a3cb246c7375b43124a41cfb065bc7f6d83b49659a9c15a"
+      "bytes": 4012,
+      "sha256": "fbe12d69a7610cbc4d9f5ca370b677203c7da1975f8f4a9fa3ceabe0a4f2d9e9"
     },
     {
       "path": "extension/clean-ui/Views.xcu",
-      "bytes": 1898,
-      "sha256": "b1ddfe1ca0e94ed5a498726b02226df5a7c256c9b24ea7ed5351467f375a8a14"
+      "bytes": 940,
+      "sha256": "63118fe0b763b15feb34b7466374ccba1178c37c4cccb86231ef1e5e7f15b54d"
     },
     {
       "path": "extension/clean-ui/Writer.xcu",
-      "bytes": 1211,
-      "sha256": "ff8e5258d3a4b090bf31aac756389c6607ad2d271cdb9c4d647d27a54a8074e4"
+      "bytes": 1043,
+      "sha256": "57f0b6cb8d23385f37e0d98c62aab1c45ffb87b4b940b6a62a4ee844974ec18e"
     },
     {
       "path": "extension/clean-ui/WriterFormWindowState.xcu",
-      "bytes": 15673,
-      "sha256": "fce1daeda530427440b0e989cda204c6f2ffd9e8dfc033653b29c73df8ed0932"
+      "bytes": 13317,
+      "sha256": "afea28500d62caaba34067fce4cff908ee22d2afc7d61f2f0fd4817a682a7dce"
     },
     {
       "path": "extension/clean-ui/WriterGlobalWindowState.xcu",
-      "bytes": 16476,
-      "sha256": "86ad30808fbe87ac62dddc1abeb501ee741a643126882d7b3c5aba4321cfca84"
+      "bytes": 13996,
+      "sha256": "a24465a97dd4c3d9eea91051099e87eada7376219368a5df6d5397a7dc7d8c38"
     },
     {
       "path": "extension/clean-ui/WriterReportWindowState.xcu",
-      "bytes": 15675,
-      "sha256": "0f054cd4e20388b37933fcea71cf788fe023ef564258a81d9ee187cf6dcd4128"
+      "bytes": 13319,
+      "sha256": "3c66834cd47845cf0450fae5cc75f609da00d82ca7fceb926be7ed807013b700"
     },
     {
       "path": "extension/clean-ui/WriterWebWindowState.xcu",
-      "bytes": 13652,
-      "sha256": "e4f756fed7461ab1408dd7a5509ef72aa62d9d9013f969445dab29b05c81e66b"
+      "bytes": 11606,
+      "sha256": "fa840251a09ac3d8c665d18445e42c5eaf1364a608485ca5dafe1473a4aa0de6"
     },
     {
       "path": "extension/clean-ui/WriterWindowState.xcu",
-      "bytes": 24183,
-      "sha256": "95a0da3c0f55839c67ca376ef87d7228df4d2a8fee7135035b09153bce225074"
+      "bytes": 21074,
+      "sha256": "0e481e196fb41eed96ee98d7a2bd027fa257d4b24804dc541e38c4c2c4b170d0"
     },
     {
       "path": "extension/clean-ui/XFormsWindowState.xcu",
-      "bytes": 15667,
-      "sha256": "e894e6c48b2986033042dc220125d045e672a118403ed5d687de30434aea080f"
+      "bytes": 13311,
+      "sha256": "adf7a7e3ade457e1e32981e0fad13dafaa1a046d5df048f2153effd5f5dda2b9"
     },
     {
       "path": "extension/clean-ui/description.xml",
-      "bytes": 735,
-      "sha256": "90f54eb16283b284b41a1b8fa0925e8eb91a55aeaaf5b1795e0405dd6060238b"
+      "bytes": 729,
+      "sha256": "ded14e5f67bdf1787256f1314f6c07636d95c973a0fe9aed3c9bc5d751147a6b"
     },
     {
       "path": "extension/clean-ui/pkg-desc/pkg-description.txt",
-      "bytes": 149,
-      "sha256": "adf75c6212a0539781a704738c125f1dc5a22e20b8d6f22d3d21a21c93fea921"
+      "bytes": 233,
+      "sha256": "b7c35e37192aa3497f43098b41fa9acce2af35eaa546a1088d1661f75bf71ab3"
+    },
+    {
+      "path": "linux/vim-navigation.yml",
+      "bytes": 1235,
+      "sha256": "08268c05d96f5609c196005f7edf9d6e3d39aab9296bf333088061a2f52ec75c"
+    },
+    {
+      "path": "macos/LibreOfficeOpen.swift",
+      "bytes": 4246,
+      "sha256": "f1ecf977d3ea1095afc94e98c17b702d3e3c64efbff77449d62ed3d2dc59e9af"
+    },
+    {
+      "path": "macos/vim-navigation.json",
+      "bytes": 7229,
+      "sha256": "1b65c573cab19efe3a7dc72a760d1a6e7e8fbd02e81c81feec07981a66268769"
     },
     {
       "path": "scripts/apply-windows-global-nologo.ps1",
@@ -185,23 +241,43 @@
     },
     {
       "path": "scripts/generate-window-policy.py",
-      "bytes": 4968,
-      "sha256": "2796b0672fb76a40b5a57241f3af3c63fe06e5f95b7059c833dfd7371fe88a3c"
+      "bytes": 5571,
+      "sha256": "9a297bee5b3a46d47a3888c9785b256620e0e7fc35672f28d17663283a163e2b"
+    },
+    {
+      "path": "scripts/install-vim-macos.py",
+      "bytes": 4225,
+      "sha256": "11a8372fc11d87d20197e70632872e662a786089d90aee2572d3b2297c2194b0"
+    },
+    {
+      "path": "scripts/lo-settings.py",
+      "bytes": 15127,
+      "sha256": "995f8ad2f3b26fd7adcd4769189ad503c32bcaba0f409b5553b2dd529e5ea6a3"
+    },
+    {
+      "path": "scripts/macos_opener.py",
+      "bytes": 7674,
+      "sha256": "4174164b7160f9c1befc3ad4694dd8c5d5606cbafda2b3a667244edf6dfe868f"
     },
     {
       "path": "scripts/restore.ps1",
-      "bytes": 6155,
-      "sha256": "511d4a62b36058bfbd18f5df25a9c4dddf50618a1bb86c001f009444342d1e3e"
+      "bytes": 1190,
+      "sha256": "793ac9023258d42cd6eb5c454818661c1d4a28f40670e267fd24b0fdb41f5447"
     },
     {
       "path": "scripts/restore.sh",
-      "bytes": 3929,
-      "sha256": "7c28e650e8db94e8b0ecfd61f8f8c361241f6fe3c75c071ca3586d2da3b230b3"
+      "bytes": 331,
+      "sha256": "cdd56f0d4a14eba4425643269dfa635a5f400a189b182b9b230aa4cc08bc5ad8"
+    },
+    {
+      "path": "scripts/setup.py",
+      "bytes": 2975,
+      "sha256": "dba8941618854addcf1eafe2a288fb379ce242db381123b73eacd1e821d1bf32"
     },
     {
       "path": "scripts/start-portable.ps1",
-      "bytes": 5726,
-      "sha256": "b789530abe47dda0fd78ffe495828156786cad68916665a8690e91a9c2810f19"
+      "bytes": 1773,
+      "sha256": "cd5959847f0e725bc3441bfc72cbf6b80e8d36e8d5bcc95b31c1c60e9282299f"
     },
     {
       "path": "scripts/start-portable.vbs",
@@ -210,28 +286,53 @@
     },
     {
       "path": "scripts/update-manifest.py",
-      "bytes": 2489,
-      "sha256": "a992b61d0e42701dc2685a7858bcdad4fa5d3b086a615ed6adb6e737aefd0ad0"
+      "bytes": 2571,
+      "sha256": "d9f2aab85a24682d34007057dbf2345d84f42952f8ec2c7a02e5e27566d0a6d6"
     },
     {
       "path": "settings/backup-summary.json",
-      "bytes": 1833,
-      "sha256": "b8a6605a63331e172485908b375806bfb0c447a832812183c7012c2623401d6f"
+      "bytes": 1986,
+      "sha256": "9c7560395774b2863a242d692040590df2a3de38b2a56b1af07a1dcffc4de98d"
     },
     {
       "path": "settings/keyboard-shortcuts.office.json",
-      "bytes": 1778,
-      "sha256": "4267a06d524a10eb6e4f7fd31b82a6884a0074de128fba4f971341dc81434fe5"
+      "bytes": 2307,
+      "sha256": "9aca5a3e7adaeaf1b8df88c9e8dd01852d8810953dcc875495bc9124fce9f130"
     },
     {
       "path": "settings/registrymodifications.portable.xcu",
-      "bytes": 457884,
-      "sha256": "23c5b686dc57812c4d284d0daa26f318aa3ceaac33eae930096b7826c7dc06fd"
+      "bytes": 424078,
+      "sha256": "0c95b89cda841d1fdc520a70ad8012c2abe76618372f2b17d48ad483986c5aee"
+    },
+    {
+      "path": "settings/side-essentials.xml",
+      "bytes": 854,
+      "sha256": "6e4e6c55988bcd48d9db8092ff4191997720e6a91a95bad457dc8db7104f7a5d"
+    },
+    {
+      "path": "setup.sh",
+      "bytes": 139,
+      "sha256": "1a116fb965314cb208c4dc848b08f5f84d245feaa3a1f61811f38d57a2c17be3"
+    },
+    {
+      "path": "tests/test_settings.py",
+      "bytes": 10767,
+      "sha256": "014606e5640cfec81f81d835ad19cb891f549b1c707baeffa41cb88142d314c4"
     },
     {
       "path": "windows/file-associations.nologo.json",
       "bytes": 2245,
       "sha256": "02d75b1971e72c41327a7a16c1579586dddd507caee4532e49ce07cae5f7c4b8"
+    },
+    {
+      "path": "windows/vim-navigation.ahk",
+      "bytes": 642,
+      "sha256": "c621f80acdb26432871b297cab81b9096ffb6f4dc8668d75f2af32f2f7ccedb1"
+    },
+    {
+      "path": "windows/vim-standalone.ahk",
+      "bytes": 790,
+      "sha256": "0484eadc20da9fa5be911196dcb8a4dc126fb7e1a42f5a116f36863167e32928"
     }
   ]
 }

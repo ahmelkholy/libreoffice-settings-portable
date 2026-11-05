@@ -1,10 +1,9 @@
 {
-  "generatedAt": "2026-08-27T19:46:00+03:00",
+  "generatedAt": "2026-11-05T16:46:12+02:00",
   "sourceProfile": "Redacted local LibreOffice user profile registrymodifications.xcu",
   "shareableXcu": "settings/registrymodifications.portable.xcu",
-  "includedItemCount": 370,
-  "excludedItemCount": 693,
-  "privacyPolicy": "Sanitized: excludes histories, recovery entries, user profile data, thumbnails, local user paths, recent-document lists, and display-specific window geometry.",
+  "includedItemCount": 360,
+  "privacyPolicy": "Managed settings only: excludes history, recovery sessions, identity, paths, hardware identifiers and window geometry. Autosave preferences are included.",
   "includedPathPrefixes": [
     "/org.openoffice.Office.Accelerators",
     "/org.openoffice.Office.Common/Appearance",
@@ -18,18 +17,20 @@
     "/org.openoffice.Office.UI.ImpressWindowState/UIElements/States",
     "/org.openoffice.Office.UI.StartModuleWindowState/UIElements/States",
     "/org.openoffice.Office.UI.WriterWindowState/UIElements/States",
-    "/org.openoffice.Office.UI.Sidebar",
     "/org.openoffice.Office.Views/Windows",
     "/org.openoffice.Office.Writer/Content",
     "/org.openoffice.Office.Writer/Cursor",
     "/org.openoffice.Office.Writer/FmtAidsAutocomplete",
     "/org.openoffice.Office.Writer/Layout",
     "/org.openoffice.Setup/L10N",
-    "/org.openoffice.Setup/Office/Factories"
+    "/org.openoffice.Setup/Office/Factories",
+    "/org.openoffice.Office.Recovery/AutoSave"
   ],
   "windowsNoLogo": "scripts/apply-windows-global-nologo.ps1 for install-level Logo=0; windows/file-associations.nologo.json and scripts/apply-windows-nologo-associations.ps1 for per-user file associations; no shortcuts are created.",
   "portableRestore": [
-    "scripts/restore.ps1",
-    "scripts/restore.sh"
-  ]
+    "scripts/lo-settings.py apply",
+    "scripts/restore.sh",
+    "scripts/restore.ps1"
+  ],
+  "layout": "Native essentials toolbar docked on the left (DockingArea=2), native contextual sidebar on the right; horizontal toolbars and status bar hidden by default."
 }

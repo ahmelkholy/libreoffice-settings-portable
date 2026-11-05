@@ -2,7 +2,8 @@
   "scope": "LibreOffice Writer",
   "notes": [
     "These shortcuts are layered into LibreOffice's accelerator settings.",
-    "They are intended to make Writer closer to Microsoft Word while preserving LibreOffice defaults where practical."
+    "They are intended to make Writer closer to Microsoft Word while preserving LibreOffice defaults where practical.",
+    "The app-scoped held CapsLock adapter adds B/F/G/N without changing ordinary typing or the existing SHK HJKL and W/E keys."
   ],
   "shortcuts": [
     {
@@ -59,7 +60,17 @@
       "keys": "Ctrl+Alt+3",
       "command": ".uno:StyleApply?Style:string=Heading 3&FamilyName:string=ParagraphStyles",
       "meaning": "Apply Heading 3"
+    },
+    {
+      "keys": "Ctrl+Alt+F13 (Command+Option+F13 on macOS)",
+      "command": ".uno:RepeatSearch",
+      "meaning": "Internal CapsLock+N bridge: repeat the native search"
+    },
+    {
+      "keys": "Ctrl+Alt+F14 (Command+Option+F14 on macOS)",
+      "command": ".uno:SearchDialog",
+      "meaning": "Internal CapsLock+F bridge: open native Find and Replace"
     }
-  ]
+  ],
+  "navigationGuide": "VIM.md"
 }
-

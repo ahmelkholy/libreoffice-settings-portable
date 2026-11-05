@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate immutable no-toolbar configuration files from LibreOffice schemas."""
+"""Generate toolbar defaults, with a native essentials toolbar docked on the left."""
 
 from __future__ import annotations
 
@@ -12,6 +12,8 @@ from pathlib import Path
 OOR = "http://openoffice.org/2001/registry"
 PACKAGE = "org.openoffice.Office.UI"
 ZOTERO_TOOLBAR = "private:resource/toolbar/addon_Zotero.OfficeToolBar"
+ESSENTIALS = "private:resource/toolbar/custom_sideessentials"
+SIDE_COMPONENTS = {"WriterWindowState", "CalcWindowState", "ImpressWindowState", "DrawWindowState"}
 
 
 def parse_args() -> argparse.Namespace:
@@ -64,18 +66,25 @@ def render_component(name: str, toolbars: set[str]) -> str:
         lines.extend(
             [
                 f'      <node oor:name="{escaped}">',
-                '        <prop oor:name="Visible" oor:finalized="true">',
+                '        <prop oor:name="Visible">',
                 "          <value>false</value>",
                 "        </prop>",
-                '        <prop oor:name="ContextSensitive" oor:finalized="true">',
+                '        <prop oor:name="ContextSensitive">',
                 "          <value>false</value>",
                 "        </prop>",
-                '        <prop oor:name="HideFromToolbarMenu" oor:finalized="true">',
-                "          <value>true</value>",
+                '        <prop oor:name="HideFromToolbarMenu">',
+                "          <value>false</value>",
                 "        </prop>",
             ]
         )
         lines.append("      </node>")
+    if name in SIDE_COMPONENTS:
+        lines.append(f'      <node oor:name="{ESSENTIALS}" oor:op="replace">')
+        for prop, value in (("UIName", "Essentials"), ("Visible", "true"), ("ContextSensitive", "false"),
+                            ("Docked", "true"), ("DockingArea", "2"), ("DockPos", "0,0"),
+                            ("HideFromToolbarMenu", "false")):
+            lines.append(f'        <prop oor:name="{prop}"><value>{value}</value></prop>')
+        lines.append('      </node>')
     lines.extend(
         [
             "    </node>",

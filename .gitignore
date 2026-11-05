@@ -11,6 +11,9 @@ windows/soffice.ini-backups/
 raw-profile/
 private/
 portable-profile/
+.local/
+__pycache__/
+*.pyc
 
 # OS/editor noise
 .DS_Store

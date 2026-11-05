@@ -1,0 +1,42 @@
+# Optional xremap config. Application detection must work on your X11/Wayland desktop.
+# Only LibreOffice's CapsLock is changed; F24 is an internal virtual modifier.
+virtual_modifiers: [F24]
+modmap:
+  - name: LibreOffice CapsLock hold / tap Escape
+    application:
+      only: '/(?i)^(libreoffice.*|soffice.*|org\.libreoffice\.LibreOffice)$/'
+    remap:
+      CapsLock:
+        held: F24
+        alone: Esc
+        alone_timeout_millis: 150
+keymap:
+  - name: LibreOffice held navigation
+    application:
+      only: '/(?i)^(libreoffice.*|soffice.*|org\.libreoffice\.LibreOffice)$/'
+    exact_match: true
+    remap:
+      F24-h: Left
+      F24-j: Down
+      F24-k: Up
+      F24-l: Right
+      F24-Shift-h: Shift-Left
+      F24-Shift-j: Shift-Down
+      F24-Shift-k: Shift-Up
+      F24-Shift-l: Shift-Right
+      F24-w: Ctrl-Left
+      F24-e: Ctrl-Right
+      F24-Shift-w: Ctrl-Shift-Left
+      F24-Shift-e: Ctrl-Shift-Right
+      F24-b: Ctrl-Left
+      F24-Shift-b: Ctrl-Shift-Left
+      F24-f: Ctrl-Alt-F14
+      F24-Shift-f: Ctrl-Alt-F14
+      F24-n: Ctrl-Alt-F13
+      F24-Shift-n: Ctrl-Alt-F13
+      F24-g: Ctrl-Home
+      F24-Shift-g: Ctrl-End
+      F24-Dot: Home
+      F24-Slash: End
+      F24-Comma: PageUp
+      F24-m: PageDown

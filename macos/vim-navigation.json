@@ -1,0 +1,303 @@
+{
+  "title": "LibreOffice held navigation (SHK companion)",
+  "rules": [
+    {
+      "description": "LibreOffice: safe held CapsLock navigation additions",
+      "manipulators": [
+        {
+          "description": "Previous word",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_option"
+              ],
+              "repeat": true
+            }
+          ]
+        },
+        {
+          "description": "Select previous word",
+          "type": "basic",
+          "from": {
+            "key_code": "b",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "left_arrow",
+              "modifiers": [
+                "left_option",
+                "left_shift"
+              ],
+              "repeat": true
+            }
+          ]
+        },
+        {
+          "description": "Find dialog",
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "f14",
+              "modifiers": [
+                "left_command",
+                "left_option"
+              ],
+              "repeat": false
+            }
+          ]
+        },
+        {
+          "description": "Find dialog",
+          "type": "basic",
+          "from": {
+            "key_code": "f",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "f14",
+              "modifiers": [
+                "left_command",
+                "left_option"
+              ],
+              "repeat": false
+            }
+          ]
+        },
+        {
+          "description": "Document start",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "home",
+              "modifiers": [
+                "left_command"
+              ],
+              "repeat": false
+            }
+          ]
+        },
+        {
+          "description": "Document end",
+          "type": "basic",
+          "from": {
+            "key_code": "g",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "end",
+              "modifiers": [
+                "left_command"
+              ],
+              "repeat": false
+            }
+          ]
+        },
+        {
+          "description": "Repeat last search",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "f13",
+              "modifiers": [
+                "left_command",
+                "left_option"
+              ],
+              "repeat": false
+            }
+          ]
+        },
+        {
+          "description": "Repeat last search",
+          "type": "basic",
+          "from": {
+            "key_code": "n",
+            "modifiers": {
+              "mandatory": [
+                "shift"
+              ],
+              "optional": [
+                "caps_lock"
+              ]
+            }
+          },
+          "conditions": [
+            {
+              "type": "frontmost_application_if",
+              "bundle_identifiers": [
+                "^org\\.libreoffice\\.script$"
+              ]
+            },
+            {
+              "type": "variable_if",
+              "name": "shk_caps",
+              "value": 1
+            }
+          ],
+          "to": [
+            {
+              "key_code": "f13",
+              "modifiers": [
+                "left_command",
+                "left_option"
+              ],
+              "repeat": false
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
