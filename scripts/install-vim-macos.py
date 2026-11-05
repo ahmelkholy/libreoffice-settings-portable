@@ -48,17 +48,19 @@ def main():
     selected = [p for p in data["profiles"] if p.get("selected")]
     if len(selected) != 1:
         raise ValueError("Select exactly one Karabiner profile first.")
-    rules = selected[0]["complex_modifications"]["rules"]
+    # New profiles need not have complex modifications yet. Reading/removing
+    # an absent group must also leave that profile untouched.
+    rules = selected[0].get("complex_modifications", {}).get("rules", [])
     has_shk = any(
         t.get("set_variable") == {"name": "shk_caps", "value": 1}
-        for r in rules for m in r["manipulators"] for t in m.get("to", [])
+        for r in rules for m in r.get("manipulators", []) for t in m.get("to", [])
     )
-    replacement = [r for r in rules if r["description"] != NAME]
+    replacement = [r for r in rules if r.get("description") != NAME]
     if not args.remove:
         new = json.loads((ROOT / "macos/vim-navigation.json").read_text())["rules"][0]
         # Precede the generic CapsLock rules. Every addition is LibreOffice-only.
         if has_shk:
-            index = next((i for i, rule in enumerate(replacement) if rule["description"] == "SHK macOS: CapsLock navigation layer"), None)
+            index = next((i for i, rule in enumerate(replacement) if rule.get("description") == "SHK macOS: CapsLock navigation layer"), None)
             if index is None:
                 raise ValueError("The SHK navigation anchor was not found; no settings were changed.")
         else:
@@ -70,7 +72,7 @@ def main():
     backup = ROOT / ".local/backups" / ("karabiner-" + dt.datetime.now().strftime("%Y%m%d-%H%M%S-%f"))
     backup.mkdir(parents=True, mode=0o700)
     shutil.copy2(config, backup / "karabiner.json")
-    selected[0]["complex_modifications"]["rules"] = replacement
+    selected[0].setdefault("complex_modifications", {})["rules"] = replacement
     import importlib
     manager = importlib.import_module("lo-settings")
     manager.atomic_write(config, (json.dumps(data, indent=4, ensure_ascii=False) + "\n").encode())

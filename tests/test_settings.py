@@ -179,6 +179,42 @@ class SettingsTests(unittest.TestCase):
             self.assertIn({"type": "variable_if", "name": "lo_caps", "value": 1}, mapping["conditions"])
         self.assertTrue({"h", "j", "k", "l", "w", "e"} <= {m["from"]["key_code"] for m in standalone["manipulators"]})
 
+    def test_mac_installer_handles_profiles_without_rules_and_is_idempotent(self):
+        spec = importlib.util.spec_from_file_location("vim_installer", ROOT / "scripts/install-vim-macos.py")
+        installer = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(installer)
+        for initial in ({}, {"complex_modifications": {"parameters": {"basic.to_if_alone_timeout_milliseconds": 200}}}):
+            with self.subTest(initial=initial), tempfile.TemporaryDirectory() as temp:
+                root = Path(temp)
+                (root / "macos").mkdir()
+                (root / "macos/vim-navigation.json").write_bytes((ROOT / "macos/vim-navigation.json").read_bytes())
+                profile = {"selected": True, "name": "Fresh", **initial}
+                other = {"selected": False, "name": "Other", "simple_modifications": []}
+                config = root / "karabiner.json"
+                original = json.dumps({"profiles": [other, profile]}).encode()
+                config.write_bytes(original)
+                argv = ["install-vim-macos", "--config", str(config)]
+                with patch.object(installer, "ROOT", root), patch("sys.stdout", new_callable=io.StringIO):
+                    with patch.object(sys, "argv", argv + ["--remove"]):
+                        installer.main()
+                    self.assertEqual(config.read_bytes(), original)
+                    with patch.object(sys, "argv", argv):
+                        installer.main()
+                        installed = config.read_bytes()
+                        installer.main()
+                    self.assertEqual(config.read_bytes(), installed)
+                    data = json.loads(installed)
+                    self.assertEqual(data["profiles"][0], other)
+                    modifications = data["profiles"][1]["complex_modifications"]
+                    self.assertEqual(modifications.get("parameters"), initial.get("complex_modifications", {}).get("parameters"))
+                    self.assertEqual(len(modifications["rules"]), 1)
+                    backups = list(root.glob(".local/backups/*/karabiner.json"))
+                    self.assertEqual(len(backups), 1)
+                    self.assertEqual(backups[0].read_bytes(), original)
+                    with patch.object(sys, "argv", argv + ["--remove"]):
+                        installer.main()
+                    self.assertEqual(json.loads(config.read_bytes())["profiles"][1]["complex_modifications"]["rules"], [])
+
 
 if __name__ == "__main__":
     unittest.main()
