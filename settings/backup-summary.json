@@ -32,5 +32,5 @@
     "scripts/restore.sh",
     "scripts/restore.ps1"
   ],
-  "layout": "Native essentials toolbar docked on the left (DockingArea=2), native contextual sidebar on the right; horizontal toolbars and status bar hidden by default."
+  "layout": "Native essentials toolbar with 14 common and 3 app-specific actions docked on the left (DockingArea=2), native contextual sidebar on the right, and the native status bar visible at the bottom; horizontal toolbars hidden by default."
 }

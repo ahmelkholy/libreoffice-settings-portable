@@ -1,8 +1,33 @@
-# Verification — 2026-11-05
+# Verification — latest layout update 2026-11-09
 
 Host: macOS 26.6.2, Apple Silicon; LibreOffice 26.8.2.2.
 
-## Completed here
+## 2026-11-09: useful status bar and expanded left controls
+
+- Restored the native status bar in Writer, Calc, Impress and Draw. Their native
+  View menus each reported Status Bar, Sidebar and Essentials enabled during
+  document-window checks. Native status definitions retain language in Writer,
+  Calc and Impress, plus the usual document information and zoom controls.
+- Expanded the single left toolbar from nine to 17 actions per app: 14 common
+  actions, including Save As, Print, Clone Formatting, Spelling and Navigator,
+  plus three useful commands for that document type. Writer gets Table, Image
+  and Comment; Calc gets Sum, AutoFilter and Chart; Impress gets New Slide, Image
+  and Start Slideshow; Draw gets Text Box, Image and Basic Shapes.
+  All command IDs exist in the installed LibreOffice registry. The four installed
+  toolbar files exactly match the shared common XML plus `module-tools.json`;
+  their recorded docking area remains left (`2`). Horizontal toolbars stay hidden.
+- All 20 Python tests passed, including packaged extension integrity, safe
+  merging, keyboard isolation, correct app-specific tools and rejection of
+  non-native toolbar commands before installation. The extension is version 2.1.0.
+  VS Code settings/keybindings and Karabiner configuration retained their hashes.
+- The previous repository state is recorded at
+  `refs/backups/pre-statusbar-update-20261109`; the native apply operation saved
+  the prior registry and toolbar files in the ignored local backups directory.
+- Verification used native menu states, installed configuration and native
+  command definitions. Screen capture was unavailable on this host, so this is
+  not a screenshot-based assessment of every control at different window sizes.
+
+## 2026-11-05: original setup verification
 
 - Native DOCX, XLSX and PPTX fixtures were opened through the macOS default file
   association into one LibreOffice session. Their window titles and document
@@ -62,8 +87,9 @@ Physical CapsLock chords were checked by the routing model, not hardware typing.
 1. Save and quit LibreOffice; run that OS's setup entry point.
 2. Open a DOCX, XLSX and PPTX. Close their windows and open another file without
    restarting the suite.
-3. Confirm the compact left toolbar and the right contextual sidebar. Confirm
-   normal typing, save, undo, copy/paste and document-specific editing.
+3. Confirm the compact left toolbar, right contextual sidebar and bottom status
+   bar. In Writer, click the language and word-count fields. Confirm normal
+   typing, save, undo, copy/paste and document-specific editing.
 4. Hold CapsLock for H/J/K/L; release and type ordinary letters. Try CapsLock+F,
    then search for a word and CapsLock+N. Check CapsLock+G and Shift+G.
 5. Verify VS Code/terminal keys and language switching remain as expected.

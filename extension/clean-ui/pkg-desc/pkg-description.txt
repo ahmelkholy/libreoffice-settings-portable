@@ -1,1 +1,1 @@
-Native side essentials for Writer, Calc, Impress and Draw: compact actions on the left, contextual properties on the right, horizontal toolbars hidden by default. Native menus remain available. No macros or document transformations.
+Native side essentials for Writer, Calc, Impress and Draw: compact actions on the left, contextual properties on the right, and the native status bar at the bottom for document information, language where supported, and zoom. Horizontal toolbars stay hidden by default. Native menus remain available. No macros or document transformations.

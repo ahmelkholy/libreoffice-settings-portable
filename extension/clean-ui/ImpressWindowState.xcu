@@ -598,6 +598,9 @@
         <prop oor:name="DockPos"><value>0,0</value></prop>
         <prop oor:name="HideFromToolbarMenu"><value>false</value></prop>
       </node>
+      <node oor:name="private:resource/statusbar/statusbar">
+        <prop oor:name="Visible"><value>true</value></prop>
+      </node>
     </node>
   </node>
 </oor:component-data>

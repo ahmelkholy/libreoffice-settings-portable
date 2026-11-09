@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Generate toolbar defaults, with a native essentials toolbar docked on the left."""
+"""Generate defaults for the left essentials toolbar and native bottom status bar."""
 
 from __future__ import annotations
 
@@ -13,6 +13,7 @@ OOR = "http://openoffice.org/2001/registry"
 PACKAGE = "org.openoffice.Office.UI"
 ZOTERO_TOOLBAR = "private:resource/toolbar/addon_Zotero.OfficeToolBar"
 ESSENTIALS = "private:resource/toolbar/custom_sideessentials"
+STATUSBAR = "private:resource/statusbar/statusbar"
 SIDE_COMPONENTS = {"WriterWindowState", "CalcWindowState", "ImpressWindowState", "DrawWindowState"}
 
 
@@ -84,6 +85,9 @@ def render_component(name: str, toolbars: set[str]) -> str:
                             ("Docked", "true"), ("DockingArea", "2"), ("DockPos", "0,0"),
                             ("HideFromToolbarMenu", "false")):
             lines.append(f'        <prop oor:name="{prop}"><value>{value}</value></prop>')
+        lines.append('      </node>')
+        lines.append(f'      <node oor:name="{STATUSBAR}">')
+        lines.append('        <prop oor:name="Visible"><value>true</value></prop>')
         lines.append('      </node>')
     lines.extend(
         [

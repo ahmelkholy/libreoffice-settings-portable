@@ -1,10 +1,10 @@
 {
   "schema": "libreoffice-settings-portable-manifest-v2",
-  "generatedAt": "2026-11-05T17:08:30+02:00",
+  "generatedAt": "2026-11-09T14:37:45+02:00",
   "sourceProfile": "redacted local LibreOffice user profile",
   "portableFolder": "repository root",
   "separateNativeProfilePerOS": true,
-  "sharedLayout": "left essentials toolbar and right contextual sidebar",
+  "sharedLayout": "left essentials toolbar, right contextual sidebar and native bottom status bar",
   "windowsGlobalNoSplash": "optional legacy helper",
   "privateArchive": {
     "createdOnThisMachine": true,
@@ -41,8 +41,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 7586,
-      "sha256": "00a9fc11c0b2a7a145771a8fe7c0a44ca6d587c51a2111101934b5194e880a4c"
+      "bytes": 8680,
+      "sha256": "88126d83e7b9d8dff9bd762abe78e6b353d7a58f509c6f944909dee436fcdafb"
     },
     {
       "path": "Repair LibreOffice.command",
@@ -61,8 +61,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 4427,
-      "sha256": "04c12499213bedb6e556198d6512d2cc842f1995398add4bdbf5967f772a8e62"
+      "bytes": 6301,
+      "sha256": "92839185853c866c7a97fdbbcea3e0afad8eb6285577a3d0ddbdda4d5f45f3f2"
     },
     {
       "path": "VIM.md",
@@ -71,8 +71,8 @@
     },
     {
       "path": "dist/portable-clean-libreoffice.oxt",
-      "bytes": 15107,
-      "sha256": "87cd6c5960e2461c1453acb5f9176a32277678bf1ddbe8e5b6740e3e030a665c"
+      "bytes": 15226,
+      "sha256": "cea04a336f70beeb07c8adf99154baa0546a31c0a0a3908f9c187e5e887e10ca"
     },
     {
       "path": "extension/clean-ui/BaseWindowState.xcu",
@@ -86,8 +86,8 @@
     },
     {
       "path": "extension/clean-ui/CalcWindowState.xcu",
-      "bytes": 14179,
-      "sha256": "14e2b08cff792a5e4d45bd45118590f7f3a2698be4f7dc816428a17c8a6125e4"
+      "bytes": 14314,
+      "sha256": "d22929220bb52175ff0530fc5cd52633c4440453894ebf9aaaeb228805b737ab"
     },
     {
       "path": "extension/clean-ui/ChartWindowState.xcu",
@@ -126,13 +126,13 @@
     },
     {
       "path": "extension/clean-ui/DrawWindowState.xcu",
-      "bytes": 17248,
-      "sha256": "cb05906b00565f6223c79f4ae6a6e996f2ed3cdd96405866454d7288aa32a07b"
+      "bytes": 17383,
+      "sha256": "3b112ce32dcf8f5bb9dadfcb38edbc045c436c57fc4a493ea2015cc99d77d70f"
     },
     {
       "path": "extension/clean-ui/ImpressWindowState.xcu",
-      "bytes": 18970,
-      "sha256": "7e7ddb0001de21f3f47bcf9dbe44c1207be53460a9662060b6cc5d3f4f8024d3"
+      "bytes": 19105,
+      "sha256": "b12a491d615cb67acbc75a62563961c01d2abacb78cc32ec72a4bc1a69a9f139"
     },
     {
       "path": "extension/clean-ui/META-INF/manifest.xml",
@@ -186,8 +186,8 @@
     },
     {
       "path": "extension/clean-ui/WriterWindowState.xcu",
-      "bytes": 21074,
-      "sha256": "0e481e196fb41eed96ee98d7a2bd027fa257d4b24804dc541e38c4c2c4b170d0"
+      "bytes": 21209,
+      "sha256": "15d0c76ff2998de2d1302da3eefcbbb0d11c203b0ecf3734e7df2c97825ee359"
     },
     {
       "path": "extension/clean-ui/XFormsWindowState.xcu",
@@ -197,12 +197,12 @@
     {
       "path": "extension/clean-ui/description.xml",
       "bytes": 729,
-      "sha256": "ded14e5f67bdf1787256f1314f6c07636d95c973a0fe9aed3c9bc5d751147a6b"
+      "sha256": "8badae68f58bf951a2c1730165119abe205d109227ed6c33473141c6ebc0ffd1"
     },
     {
       "path": "extension/clean-ui/pkg-desc/pkg-description.txt",
-      "bytes": 233,
-      "sha256": "b7c35e37192aa3497f43098b41fa9acce2af35eaa546a1088d1661f75bf71ab3"
+      "bytes": 340,
+      "sha256": "893c0ac6066854fc8486c7d3ea88700ab2c484a151383bf71335f135d1804f4e"
     },
     {
       "path": "linux/vim-navigation.yml",
@@ -241,18 +241,18 @@
     },
     {
       "path": "scripts/generate-window-policy.py",
-      "bytes": 5571,
-      "sha256": "9a297bee5b3a46d47a3888c9785b256620e0e7fc35672f28d17663283a163e2b"
+      "bytes": 5805,
+      "sha256": "1e3cda78faef9a2be94cb25191bd1d449d91bf6326ceed7fab96093d225b06c7"
     },
     {
       "path": "scripts/install-vim-macos.py",
-      "bytes": 4225,
-      "sha256": "11a8372fc11d87d20197e70632872e662a786089d90aee2572d3b2297c2194b0"
+      "bytes": 4411,
+      "sha256": "e727ee9ce1869ad659e7937096eb9915419f2b5ef765034778ab9e8bf9ee1015"
     },
     {
       "path": "scripts/lo-settings.py",
-      "bytes": 15127,
-      "sha256": "995f8ad2f3b26fd7adcd4769189ad503c32bcaba0f409b5553b2dd529e5ea6a3"
+      "bytes": 16636,
+      "sha256": "2577a3ed8594262c2bf09eec2484107cc60265f79da67b4a159d60cd1fea3388"
     },
     {
       "path": "scripts/macos_opener.py",
@@ -286,13 +286,13 @@
     },
     {
       "path": "scripts/update-manifest.py",
-      "bytes": 2571,
-      "sha256": "d9f2aab85a24682d34007057dbf2345d84f42952f8ec2c7a02e5e27566d0a6d6"
+      "bytes": 2597,
+      "sha256": "07d218af45933d8e5dee03ce02ab9272e4b578600b7a0859c76e86011d9edeb6"
     },
     {
       "path": "settings/backup-summary.json",
-      "bytes": 1986,
-      "sha256": "9c7560395774b2863a242d692040590df2a3de38b2a56b1af07a1dcffc4de98d"
+      "bytes": 2062,
+      "sha256": "2a7d2a967ebc960c48988610e8ebff4c088205dc6ddc56549316651527cf759a"
     },
     {
       "path": "settings/keyboard-shortcuts.office.json",
@@ -300,14 +300,19 @@
       "sha256": "9aca5a3e7adaeaf1b8df88c9e8dd01852d8810953dcc875495bc9124fce9f130"
     },
     {
+      "path": "settings/module-tools.json",
+      "bytes": 315,
+      "sha256": "facdc93a653228e4430e19668afba5faaab8f8d4c89060b7ed990899f2f78e26"
+    },
+    {
       "path": "settings/registrymodifications.portable.xcu",
-      "bytes": 424078,
-      "sha256": "0c95b89cda841d1fdc520a70ad8012c2abe76618372f2b17d48ad483986c5aee"
+      "bytes": 424074,
+      "sha256": "36ae0bd8d636660472b8d050d321978948faa4241376a8372a7671b3e1df0c37"
     },
     {
       "path": "settings/side-essentials.xml",
-      "bytes": 854,
-      "sha256": "6e4e6c55988bcd48d9db8092ff4191997720e6a91a95bad457dc8db7104f7a5d"
+      "bytes": 1121,
+      "sha256": "a0b3f6dd4f4ddb554ace863906c9cf65bbd616bb2bb0c12c5c61e261ef3e0b97"
     },
     {
       "path": "setup.sh",
@@ -316,8 +321,8 @@
     },
     {
       "path": "tests/test_settings.py",
-      "bytes": 10767,
-      "sha256": "014606e5640cfec81f81d835ad19cb891f549b1c707baeffa41cb88142d314c4"
+      "bytes": 15291,
+      "sha256": "fe624e47e39fd6e361975fcc0abcff14b00d0f44d3fd95d35eae077b0e7b11e6"
     },
     {
       "path": "windows/file-associations.nologo.json",

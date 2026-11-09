@@ -16,11 +16,23 @@ force-quits LibreOffice. It does not rewrite settings on each launch.
 
 The layout is designed around vertical document space:
 
-- **Left:** nine native actions: Open, Save, Undo, Redo, Cut, Copy, Paste, Find,
-  and Export PDF.
+- **Left:** one compact toolbar with 14 common actions, grouped by purpose:
+  Open, Save, Save As, Print, Export PDF; Undo, Redo; Cut, Copy, Paste, Clone
+  Formatting; Find and Replace, Spelling, Navigator. Print opens the native
+  dialog so you can choose the printer and pages. Hover an icon for its name.
+  Three extra buttons match the document you are editing: **Writer** has Table,
+  Image and Comment; **Calc** has Sum, AutoFilter and Chart; **Impress** has New
+  Slide, Image and Start Slideshow; **Draw** has Text Box, Image and Basic Shapes.
+  Each app shows 17 actions in one vertical toolbar.
 - **Right:** LibreOffice's contextual sidebar: properties, formatting, styles,
   navigation and application-specific tools.
-- Horizontal toolbars and the status bar start hidden. Native menus remain
+- **Bottom:** the native status bar stays visible. Writer provides page and
+  word counts, page style, text language, selection mode, save state and zoom.
+  Click the language to change the selected text or paragraph's language;
+  click the word count for details. Calc provides sheet/selection information
+  and calculation summaries; Impress and Draw show slide/page and object
+  information. Each app keeps its own native controls in this single row.
+- Horizontal toolbars start hidden. Native menus remain
   available, including View → User Interface to choose another native layout. These
   are defaults, not permanent locks on the interface.
 - The existing Writer formatting marks, hidden rulers and 50% initial zoom
@@ -129,8 +141,9 @@ Windows no-splash scripts remain optional; they are not needed for profile sync.
 
 ## Source and verification
 
-- `settings/`: shared XML, essentials toolbar and shortcut descriptions.
-- `extension/clean-ui/`: native configuration extension source, version 2.0.0.
+- `settings/`: shared XML, common essentials toolbar, app-specific tools in
+  `module-tools.json`, and shortcut descriptions.
+- `extension/clean-ui/`: native configuration extension source, version 2.1.0.
   The historical extension ID is retained so it upgrades the existing policy.
 - `macos/`, `windows/`, `linux/`: adapters within this one repository.
 - `scripts/`: one cross-platform settings engine and host-specific installers.
@@ -147,4 +160,5 @@ Linux desktop behavior must be verified on those machines; this Mac cannot
 certify their input hooks, desktop detection or installed fonts/extensions.
 
 Implementation references: [LibreOffice command-line parameters](https://help.libreoffice.org/latest/en-US/text/shared/guide/start_parameters.html)
-and [native keyboard customization](https://help.libreoffice.org/latest/en-US/text/shared/01/06140200.html).
+[native keyboard customization](https://help.libreoffice.org/latest/en-US/text/shared/01/06140200.html),
+and [Writer's native status bar](https://help.libreoffice.org/latest/en-US/text/swriter/main0208.html).

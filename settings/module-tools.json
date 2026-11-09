@@ -1,0 +1,6 @@
+{
+  "swriter": [".uno:InsertTable", ".uno:InsertGraphic", ".uno:InsertAnnotation"],
+  "scalc": [".uno:AutoSum", ".uno:DataFilterAutoFilter", ".uno:InsertObjectChart"],
+  "simpress": [".uno:InsertPage", ".uno:InsertGraphic", ".uno:Presentation"],
+  "sdraw": [".uno:Text", ".uno:InsertGraphic", ".uno:BasicShapes"]
+}

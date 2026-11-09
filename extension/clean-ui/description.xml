@@ -4,7 +4,7 @@
     xmlns:d="http://openoffice.org/extensions/description/2006"
     xmlns:xlink="http://www.w3.org/1999/xlink">
   <identifier value="org.ahmelkholy.libreoffice.cleanui"/>
-  <version value="2.0.0"/>
+  <version value="2.1.0"/>
   <display-name>
     <name lang="en">LibreOffice Side Essentials</name>
   </display-name>

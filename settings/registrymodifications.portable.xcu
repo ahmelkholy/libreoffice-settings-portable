@@ -13071,7 +13071,7 @@
   <item oor:path="/org.openoffice.Office.UI.WriterWindowState/UIElements/States">
     <node oor:name="private:resource/statusbar/statusbar" oor:op="replace">
       <prop oor:name="Visible" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
       <prop oor:name="ContextSensitive" oor:op="fuse">
         <value>false</value>
@@ -13111,7 +13111,7 @@
   <item oor:path="/org.openoffice.Office.UI.CalcWindowState/UIElements/States">
     <node oor:name="private:resource/statusbar/statusbar" oor:op="replace">
       <prop oor:name="Visible" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
       <prop oor:name="ContextSensitive" oor:op="fuse">
         <value>false</value>
@@ -13151,7 +13151,7 @@
   <item oor:path="/org.openoffice.Office.UI.ImpressWindowState/UIElements/States">
     <node oor:name="private:resource/statusbar/statusbar" oor:op="replace">
       <prop oor:name="Visible" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
       <prop oor:name="ContextSensitive" oor:op="fuse">
         <value>false</value>
@@ -13191,7 +13191,7 @@
   <item oor:path="/org.openoffice.Office.UI.DrawWindowState/UIElements/States">
     <node oor:name="private:resource/statusbar/statusbar" oor:op="replace">
       <prop oor:name="Visible" oor:op="fuse">
-        <value>false</value>
+        <value>true</value>
       </prop>
       <prop oor:name="ContextSensitive" oor:op="fuse">
         <value>false</value>

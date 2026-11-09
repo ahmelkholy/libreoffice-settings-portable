@@ -103,6 +103,7 @@ class SettingsTests(unittest.TestCase):
                 raise subprocess.CalledProcessError(1, "unopkg")
             with patch.object(lo, "ROOT", root), patch.object(lo, "find_program", return_value=Path("unopkg")), patch.object(subprocess, "run", side_effect=failure):
                 lo.atomic_write(root / "settings/side-essentials.xml", (ROOT / "settings/side-essentials.xml").read_bytes())
+                lo.atomic_write(root / "settings/module-tools.json", (ROOT / "settings/module-tools.json").read_bytes())
                 with self.assertRaises(RuntimeError):
                     lo.apply_settings(profile)
             self.assertEqual(target.read_bytes(), original)
@@ -157,6 +158,36 @@ class SettingsTests(unittest.TestCase):
             values = {p.get(f"{{{lo.OOR}}}name"): p.findtext("value") for p in nodes[0]}
             self.assertEqual(values["DockingArea"], "2")
             self.assertEqual(values["Visible"], "true")
+
+    def test_module_toolbars_keep_common_actions_without_cross_app_leaks(self):
+        source = (ROOT / "settings/side-essentials.xml").read_bytes()
+        commands = lambda data: {n.get(f"{{{lo.XLINK}}}href") for n in ET.fromstring(data).iter(f"{{{lo.TOOLBAR}}}toolbaritem")}
+        common = commands(source)
+        first = lo.side_toolbars()
+        self.assertEqual(first, lo.side_toolbars())
+        self.assertEqual(source, (ROOT / "settings/side-essentials.xml").read_bytes())
+        for module, data in first.items():
+            self.assertTrue(common <= commands(data))
+        self.assertIn(".uno:InsertTable", commands(first["swriter"]))
+        self.assertNotIn(".uno:AutoSum", commands(first["swriter"]))
+        self.assertIn(".uno:AutoSum", commands(first["scalc"]))
+        self.assertNotIn(".uno:InsertTable", commands(first["scalc"]))
+        self.assertIn(".uno:Presentation", commands(first["simpress"]))
+        self.assertNotIn(".uno:Presentation", commands(first["sdraw"]))
+
+    def test_invalid_toolbar_is_rejected_before_install_or_profile_writes(self):
+        with tempfile.TemporaryDirectory() as temp, patch.object(lo, "office_processes", return_value=[]):
+            root = Path(temp)
+            profile = root / "profile/user"
+            lo.atomic_write(root / "settings/side-essentials.xml", (ROOT / "settings/side-essentials.xml").read_bytes())
+            additions = json.loads((ROOT / "settings/module-tools.json").read_text())
+            additions["swriter"] = ["macro://unwanted/script"]
+            lo.atomic_write(root / "settings/module-tools.json", json.dumps(additions).encode())
+            with patch.object(lo, "ROOT", root), patch.object(subprocess, "run") as install:
+                with self.assertRaises(ValueError):
+                    lo.apply_settings(profile)
+            install.assert_not_called()
+            self.assertFalse(profile.exists())
 
     def test_mac_additions_cannot_capture_normal_typing_or_other_apps(self):
         data = json.loads((ROOT / "macos/vim-navigation.json").read_text())

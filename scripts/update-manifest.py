@@ -56,7 +56,7 @@ def main() -> None:
         "sourceProfile": "redacted local LibreOffice user profile",
         "portableFolder": "repository root",
         "separateNativeProfilePerOS": True,
-        "sharedLayout": "left essentials toolbar and right contextual sidebar",
+        "sharedLayout": "left essentials toolbar, right contextual sidebar and native bottom status bar",
         "windowsGlobalNoSplash": "optional legacy helper",
         "privateArchive": {
             "createdOnThisMachine": True,

@@ -4,6 +4,9 @@
                  xmlns:xlink="http://www.w3.org/1999/xlink" toolbar:uiname="Essentials">
   <toolbar:toolbaritem xlink:href=".uno:Open"/>
   <toolbar:toolbaritem xlink:href=".uno:Save"/>
+  <toolbar:toolbaritem xlink:href=".uno:SaveAs"/>
+  <toolbar:toolbaritem xlink:href=".uno:Print"/>
+  <toolbar:toolbaritem xlink:href=".uno:ExportDirectToPDF"/>
   <toolbar:toolbarseparator/>
   <toolbar:toolbaritem xlink:href=".uno:Undo"/>
   <toolbar:toolbaritem xlink:href=".uno:Redo"/>
@@ -11,7 +14,9 @@
   <toolbar:toolbaritem xlink:href=".uno:Cut"/>
   <toolbar:toolbaritem xlink:href=".uno:Copy"/>
   <toolbar:toolbaritem xlink:href=".uno:Paste"/>
+  <toolbar:toolbaritem xlink:href=".uno:FormatPaintbrush"/>
   <toolbar:toolbarseparator/>
   <toolbar:toolbaritem xlink:href=".uno:SearchDialog"/>
-  <toolbar:toolbaritem xlink:href=".uno:ExportDirectToPDF"/>
+  <toolbar:toolbaritem xlink:href=".uno:SpellDialog"/>
+  <toolbar:toolbaritem xlink:href=".uno:Navigator"/>
 </toolbar:toolbar>

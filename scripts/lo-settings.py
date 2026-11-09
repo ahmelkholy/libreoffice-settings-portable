@@ -24,6 +24,9 @@ POLICY = ROOT / "dist/portable-clean-libreoffice.oxt"
 OOR = "http://openoffice.org/2001/registry"
 XS = "http://www.w3.org/2001/XMLSchema"
 XSI = "http://www.w3.org/2001/XMLSchema-instance"
+TOOLBAR = "http://openoffice.org/2001/toolbar"
+XLINK = "http://www.w3.org/1999/xlink"
+MODULES = ("swriter", "scalc", "simpress", "sdraw")
 for prefix, uri in (("oor", OOR), ("xs", XS), ("xsi", XSI)):
     ET.register_namespace(prefix, uri)
 
@@ -178,14 +181,39 @@ def export_settings(profile):
     print(f"Exported {len(result)} managed settings. Previous source: {backup}")
 
 
+def side_toolbars():
+    """Keep common actions in one source and add only the current app's tools."""
+    base = ET.parse(ROOT / "settings/side-essentials.xml").getroot()
+    additions = json.loads((ROOT / "settings/module-tools.json").read_text(encoding="utf-8"))
+    if base.tag != f"{{{TOOLBAR}}}toolbar" or not isinstance(additions, dict) or set(additions) != set(MODULES):
+        raise ValueError("Toolbar settings must define Writer, Calc, Impress and Draw.")
+    ET.register_namespace("toolbar", TOOLBAR)
+    ET.register_namespace("xlink", XLINK)
+    result = {}
+    for module in MODULES:
+        root = copy.deepcopy(base)
+        commands = additions[module]
+        if not isinstance(commands, list) or not all(isinstance(command, str) for command in commands):
+            raise ValueError(f"Invalid toolbar commands for {module}.")
+        if commands:
+            ET.SubElement(root, f"{{{TOOLBAR}}}toolbarseparator")
+        for command in commands:
+            ET.SubElement(root, f"{{{TOOLBAR}}}toolbaritem", {f"{{{XLINK}}}href": command})
+        for item in root.iter(f"{{{TOOLBAR}}}toolbaritem"):
+            if not re.fullmatch(r"\.uno:[A-Za-z][A-Za-z0-9_.]*", item.get(f"{{{XLINK}}}href", "")):
+                raise ValueError("Only native .uno: toolbar commands are supported.")
+        ET.indent(root, space="  ")
+        result[module] = ET.tostring(root, encoding="utf-8", xml_declaration=True) + b"\n"
+    return result
+
+
 def apply_settings(profile, replace=False):
     require_closed()
     portable = read_xcu(SOURCE)
     portable_check(portable)
     if not POLICY.is_file():
         raise RuntimeError("Missing policy extension. Run scripts/build-policy.sh.")
-    toolbar = ROOT / "settings/side-essentials.xml"
-    ET.parse(toolbar)
+    toolbars = side_toolbars()
     unopkg = find_program("unopkg")
     target = profile / "registrymodifications.xcu"
     live = read_xcu(target) if target.exists() else ET.Element(f"{{{OOR}}}items")
@@ -205,13 +233,13 @@ def apply_settings(profile, replace=False):
                     target.unlink()
             raise RuntimeError(f"Policy installation failed. Settings backup: {backup}. {exc}") from exc
     require_closed()
-    for module in ("swriter", "scalc", "simpress", "sdraw"):
+    for module in MODULES:
         destination = profile / "config/soffice.cfg/modules" / module / "toolbar/custom_sideessentials.xml"
         if destination.exists():
             saved = backup / "toolbars" / module / destination.name
             saved.parent.mkdir(parents=True, exist_ok=True)
             shutil.copy2(destination, saved)
-        atomic_write(destination, toolbar.read_bytes())
+        atomic_write(destination, toolbars[module])
     atomic_write(target, xml_bytes(output))
     print(f"Applied {len(portable)} managed settings to {target}\nBackup: {backup}")
 
