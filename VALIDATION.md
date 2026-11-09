@@ -2,6 +2,18 @@
 
 Host: macOS 26.6.2, Apple Silicon; LibreOffice 26.8.2.2.
 
+## 2026-11-09: style-list contrast in the dark theme
+
+- Added `/org.openoffice.Office.Common/StylesAndFormatting/Preview=false` to
+  the shared settings. This is the native **Show previews** switch, verified
+  against the installed configuration schema and LibreOffice's Styles help.
+  Plain style names use the UI theme instead of previewing document text colors.
+- The local change targets only this preference, with a registry backup first.
+  The dark-theme settings, document formatting, side toolbar definitions and
+  keyboard configuration are preserved. The setting is shared across OSes.
+- Verification of this change uses configuration readback; visual contrast
+  cannot be certified while screen capture remains unavailable on this host.
+
 ## 2026-11-09: useful status bar and expanded left controls
 
 - Restored the native status bar in Writer, Calc, Impress and Draw. Their native

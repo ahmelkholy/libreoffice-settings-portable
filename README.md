@@ -26,6 +26,10 @@ The layout is designed around vertical document space:
   Each app shows 17 actions in one vertical toolbar.
 - **Right:** LibreOffice's contextual sidebar: properties, formatting, styles,
   navigation and application-specific tools.
+  The Styles list uses readable theme-colored names with **Show previews** off.
+  This avoids black document-style text on the dark sidebar; the actual styles
+  in your documents keep their formatting. You can re-enable Show previews at
+  the bottom of the Styles panel if you want formatted samples again.
 - **Bottom:** the native status bar stays visible. Writer provides page and
   word counts, page style, text language, selection mode, save state and zoom.
   Click the language to change the selected text or paragraph's language;
@@ -159,6 +163,7 @@ See [VALIDATION.md](VALIDATION.md) for what was actually checked. Windows and
 Linux desktop behavior must be verified on those machines; this Mac cannot
 certify their input hooks, desktop detection or installed fonts/extensions.
 
-Implementation references: [LibreOffice command-line parameters](https://help.libreoffice.org/latest/en-US/text/shared/guide/start_parameters.html)
+Implementation references: [LibreOffice command-line parameters](https://help.libreoffice.org/latest/en-US/text/shared/guide/start_parameters.html),
 [native keyboard customization](https://help.libreoffice.org/latest/en-US/text/shared/01/06140200.html),
-and [Writer's native status bar](https://help.libreoffice.org/latest/en-US/text/swriter/main0208.html).
+[Writer's native status bar](https://help.libreoffice.org/latest/en-US/text/swriter/main0208.html),
+and [Styles panel previews](https://help.libreoffice.org/latest/en-US/text/shared/01/styles.html).

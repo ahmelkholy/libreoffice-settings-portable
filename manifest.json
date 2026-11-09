@@ -1,6 +1,6 @@
 {
   "schema": "libreoffice-settings-portable-manifest-v2",
-  "generatedAt": "2026-11-09T14:37:45+02:00",
+  "generatedAt": "2026-11-09T14:55:01+02:00",
   "sourceProfile": "redacted local LibreOffice user profile",
   "portableFolder": "repository root",
   "separateNativeProfilePerOS": true,
@@ -41,8 +41,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 8680,
-      "sha256": "88126d83e7b9d8dff9bd762abe78e6b353d7a58f509c6f944909dee436fcdafb"
+      "bytes": 9083,
+      "sha256": "4dd8296c3f7e75b829da82ed45bdc6331b0fe2c8fd5d483edb8eb8bf76b3624c"
     },
     {
       "path": "Repair LibreOffice.command",
@@ -61,8 +61,8 @@
     },
     {
       "path": "VALIDATION.md",
-      "bytes": 6301,
-      "sha256": "92839185853c866c7a97fdbbcea3e0afad8eb6285577a3d0ddbdda4d5f45f3f2"
+      "bytes": 7050,
+      "sha256": "dbf0924e5c668f68b1bbc6f8a04bdc8a77df076fc821bd417729994f1cfb7c6d"
     },
     {
       "path": "VIM.md",
@@ -291,8 +291,8 @@
     },
     {
       "path": "settings/backup-summary.json",
-      "bytes": 2062,
-      "sha256": "2a7d2a967ebc960c48988610e8ebff4c088205dc6ddc56549316651527cf759a"
+      "bytes": 2119,
+      "sha256": "34a6c26cac78903fee9b860123d778ee00f03ba98dc6bc582ab6c9c57f599cb9"
     },
     {
       "path": "settings/keyboard-shortcuts.office.json",
@@ -306,8 +306,8 @@
     },
     {
       "path": "settings/registrymodifications.portable.xcu",
-      "bytes": 424074,
-      "sha256": "36ae0bd8d636660472b8d050d321978948faa4241376a8372a7671b3e1df0c37"
+      "bytes": 424237,
+      "sha256": "4c07651f06deb2156779f645aeaee2e57e637864b7ee773d85a38e9fc2b550c7"
     },
     {
       "path": "settings/side-essentials.xml",

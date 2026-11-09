@@ -2,7 +2,7 @@
   "generatedAt": "2026-11-05T16:46:12+02:00",
   "sourceProfile": "Redacted local LibreOffice user profile registrymodifications.xcu",
   "shareableXcu": "settings/registrymodifications.portable.xcu",
-  "includedItemCount": 360,
+  "includedItemCount": 361,
   "privacyPolicy": "Managed settings only: excludes history, recovery sessions, identity, paths, hardware identifiers and window geometry. Autosave preferences are included.",
   "includedPathPrefixes": [
     "/org.openoffice.Office.Accelerators",
@@ -10,6 +10,7 @@
     "/org.openoffice.Office.Common/I18N",
     "/org.openoffice.Office.Common/Misc",
     "/org.openoffice.Office.Common/Save/Document",
+    "/org.openoffice.Office.Common/StylesAndFormatting",
     "/org.openoffice.Office.Common/View/Menu",
     "/org.openoffice.Office.UI.ToolbarMode",
     "/org.openoffice.Office.UI.CalcWindowState/UIElements/States",
